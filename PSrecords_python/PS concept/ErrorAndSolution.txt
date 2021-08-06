@@ -1,0 +1,38 @@
+이것은 평생을 건 싸움, LG CNS
+
+# Error And Solution
+## 1. accuracy error
+### Example
+
+### 탐지, 예방 솔루션
+Sol0) 사후 print 외에도, !!사전 print with 모듈화된 함수!!
+Sol1) 귀찮아도 드래그하거나 줄그으면서 읽기
+Sol2)!! 제발 한번에 다 만들려고 하지 말고, 단계별로, 모듈별로 쪼개서 분석하고 구현해라
+그간 건 쉬우니까 된거지..., 그리고 결국 된거지 시간 2~3배 쓴건 자랑이 아니다.
+
+## 2. logic error
+### Example
+
+### 탐지, 예방 솔루션
+Sol0) 사후 print 외에도, !!사전 print with 모듈화된 함수!!
+Sol1) 무작위로라도 tcp를 통해서 찾아야
+Sol2) 귀찮아도 드래그하거나 줄그으면서  다시 step1,  단 예제의 케이스나 소규모에서만 패턴 찾으면 필패
+Sol3) 벤다이어그램 적극활용
+
+## 3. implementation error
+### Example
+- 초기화의 문제 !!for, while문 내 변수 초기화 오류!!
+- 문법오류, 문법 구현,활용의 오류(인터프레터로 안잡힘),  = 대신 ==,+= 기입할려다가 =+
+- 매직넘버
+
+### 탐지, 예방 솔루션
+Sol0) 사후 print 외에도, !!사전 print with 모듈화된 함수!!
+check용 print format 만들기
+Sol1) 망설이고, 뜸들이지 말고 다시처음부터 짜라. 시간이 부족해도 최선
+
+print
+ for, while, func1 
+  print
+
+  print
+print

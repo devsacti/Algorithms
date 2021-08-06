@@ -1,0 +1,250 @@
+알고리즘과 코딩 요령
+! 되도록 for문은 i 쓰자 코테에는 초기화 문제가 생기니까
+
+! 들여쓰기 오류로 인해 코드는 작동하는데, 초기화가 잘못됨 
+CHEEZE문제
+
+
+! 최적화 >= 범용성
+
+! accurate하게 이해하고 logical하게 implement했는데, 틀리다?->오타 발생, 나의 오류를 경계 print필수
+
+! 일단 '정렬'하라, 파이썬의 최고강점. 나중에 시간복잡도상 빼더라도,
+
+! 별 생각없이 하는 캐스팅이 정확히 '내림'이라는 것을 유의하자->이진탐색에서 최적의 짝을 구할때 구분필요.L10_04
+
+! 재귀구조를 추론하는데 있어 depth단위로 묶어내는 것이 핵심
+
+! 재귀함수에서 재귀형태 후 리턴이 있다면 리턴값을 저장해줄 변수도 있어야한다.
+언젠가 재귀가 끝나서 나온 결과값을 받음-네이버커넥트, L5_06lcm
+!!!!!딱 이런 문제와 연관하여
+
+for문 작성 시,  기존값이 내 의도와 다르게 중첩되면서, 보존되지 않으면서 원하는 token값을 잃는 경우 대비
+        for i in range(n-mid_dx+1):
+            print(i, mid_dx,n-mid_dx)
+            sample=seqs[i:(i+mid_dx)]
+            print(sample)
+
+            if(len(set(sample))==len(sample)):
+                token_result=1
+            else:
+                token_result=0
+        
+        if(token_result==1):
+            result=mid_dx
+            start_dx=mid_dx+1
+        else:
+            end_dx=mid_dx-1
+L10_08에서 위의 if문에서 token이 한번이라도 1이면 result가 저장되야하는데,
+앞썬 폴문내 시행에서 1이됬다가 추후 시행에서 0이되면서 꼬임, break을 해주자
+
+!while문 구현 시, 그 안에서 파생된 변수로 제어할 수도 있는데,
+문제풀이 과정에서 여러 시도들이 앞에 있다면, 그런 while밖변수를 바탕으로
+while 조건 문을 시작하자. 그게 사고의 연속성 및 생산성
+
+!전달받은 것이 idx 개념인가 순서개념인가 분별하자.
+
+!파이썬 range나 스플릿 문법 조건과 연결지어서 정수좌표계와 실수좌표계를 선언할때
+
+주어진 것은 정수좌표계 기반으로 이해하여, 시작점은 첫번째칸의 idx, 끝점은 마지막 칸의 idx로이해가능
+가령,
+
+둘다 좌표 x,y->idx-> range(x,y+1) 
+
+! 특정 값이 들어올때까지 받기
+
+별도의 토큰식으로 일단 구현하고
+
+참고로
+if __name__=='__main__':
+    token=1
+    ns=[]
+
+    while(int(input()) != 0 ):
+        ns.append(int(input()))
+
+    print(ns)
+
+꼴에서 1 10 0이 입력되면
+1은 while의 판단에서 소모되고 10만 저장된다.
+
+! 모든 것이 참임을 확인하기 위해 단계별, 가령 폴문 경우별 체크보단
+참임을 전제하고 여집합적 관점에서 조건을 충족못시키는 걸 박탈하는 게 편리한듯.
+
+def judgeprime(element):
+    limit_area=int(math.sqrt(element))
+    token_prime=1
+
+    for i in range(2, limit_area+1):
+        if(element%i==0):
+            token_prime=0
+            break
+
+    if(token_prime==1):
+        return 1
+    else:
+        return 0
+
+일단 주어진 element한테 프라임토큰이 1인, 즉 소수라는 전제를 준다.
+그리고 소수가 될수 없다면 토큰을 0으로 즉 박탈한다.
+만약 주어진 element가 폴문 전 단계에서 소수임을 확인하려한다면, 별도의 또 단계별 충족여부를
+토큰이 요구된다.
+
+! list-> str, str->list
+''.join
+list()
+
+!재귀구조에서 지역변수이지만 재귀과정 전체에서는 유지되야하는 변수는 이중 레이어 함수로 해결
+ex)
+
+def core_fucntion():
+    pass
+
+def function():
+    val
+    core_funtion
+
+!재귀구조는 2번째 뎁스, 즉 전달받고 처리하고 전달받는 중간 과정에서 설계
+-반드시 기저조건과 그렇지 않은 경우에서 시작해야 됨, 그리고 필히 limit_depth도 설정하자
+L8의 practice와 아닌 것 교차 확인,
+참고로 전자는 직관에 따른 초기 설계, 후자는 컴퓨터 논리에 맞춰진 설계
+
+! map을 조심하자, 이건 리스트가 아니고, 이에 따라 결과값도 문제가 생기더라.
+
+PS C:\cosmos\MyVScode> python -u "c:\cosmos\MyVScode\MyAlgorithm_python\L10\L10_01binarysearch.py"  
+10 4
+1 2 4 8 10 11 12 14 15 19
+4 5 8 17
+YES
+NO
+NO
+PS C:\cosmos\MyVScode> python -u "c:\cosmos\MyVScode\MyAlgorithm_python\L10\L10_01binarysearch.py"  
+10 4
+1 2 4 8 10 11 12 14 15 19
+4 5 8 17
+<map object at 0x000001EB6F632FD0> <map object at 0x000001EB6F632F40>
+YES
+NO
+NO
+NO
+#아래는 입력값을 list로 캐스팅함.
+PS C:\cosmos\MyVScode> python -u "c:\cosmos\MyVScode\MyAlgorithm_python\L10\L10_01binarysearch.py"  
+10 4
+1 2 4 8 10 11 12 14 15 19
+4 5 8 17
+[1, 2, 4, 8, 10, 11, 12, 14, 15, 19] [4, 5, 8, 17]
+YES
+NO
+YES
+NO
+
+!파이썬 시간복잡도 오바 시 대응책
+1. 문제조건과 충돌하지 않는다면, 리스트 말고 셋을 쓰자
+
+if __name__=='__main__':
+    n, q =map(int, input().split())
+
+    seq=set(map(int, input().split()))
+
+    quests=list(map(int, input().split()))
+
+    # print(seq, quests)
+
+    for quest in quests:
+        if(quest in seq):
+            print('YES')
+        else:
+            print('NO')
+############위가 더 빠름https://twpower.github.io/120-python-in-operator-time-complexity
+if __name__=='__main__':
+    n, q =map(int, input().split())
+
+    seq=list(map(int, input().split()))
+
+    quests=list(map(int, input().split()))
+
+    # print(seq, quests)
+
+    for quest in quests:
+        if(quest in seq):
+            print('YES')
+        else:
+            print('NO')
+
+2. 내장함수라도 결과값을 저장해서 함수호출 최소화
+
+! 이중 for문 탈출; 토큰을 이용해서 겉 for문을 탈출
+
+        token_forbreak=1
+        for minus in minuss:
+            key=-minus
+
+            while(left_idx_pluss!=right_idx_pluss):
+                mid=int( (left_idx_pluss+right_idx_pluss)/2 )
+
+                if(pluss[mid]==key):
+                    print(minus, pluss[mid])
+                    token_forbreak=0
+                    break
+
+            
+            if(token_forbreak==0):
+                break
+
+! for문이나 while에서 시행마다 사용될 변수의 경우 반복문 내 초기화 잊지말자.
+L10_04
+
+!while문 조건을 간접조건; 토큰활용, 아니면 직접조건으로 할지 고민된다면 일다 간접으로해라
+난 우아하지 않다
+
+간접조건
+token_event=1
+while(token!=1)
+   if(핵심조건 충족 가령, 시행마다 i가 감소하다가 i==0)
+     break
+
+직접조건
+  while(i==0)
+     #action
+     i-=1
++추가
+and의 경우 '먼저 체크해야하는걸' '먼저 배치하라'
+top_stack 먼저 체크해야하면
+top_stack>=0 and stack[-1].isdecimal() <o>
+stack[-1].isdecimal() and top_stack>=0 <x>
+
+!쉘로우 카피 개념
+https://dpdpwl.tistory.com/82
+
+! 바이너리 서치전에 일단 for으로 그리디하게 짜봐, 바로 안떠오르면
+
+!
+map object
+
+split, strip string
+
+list list
+
+! and or 용법; 표현식1과 표현식 2의 구성
+    if(item=='1' or item== '2'):<0>
+    if(item=='1' or item== '2'):<x>
+
+! stack에서 top을 -1이 해결할줄 알았는데, 빈 스택의 경우 -1이 리스트아웃떠서 부적합,
+앞에서 스택 길이를 체크해야.
+
+ 한편, -1만 쓰기 그런게 스택의 구체적인 top이 필요할때 매번 len으로 점검한다면 
+길이가 길때 문제 생김, 여튼 별도로 top 변수 선언하는게 현재까진 바람직
+->이러한 애로사항을 피하기 위한 init방식이
+
+        #dq_via의 top구하기 for 목표알파벳 문자열 만들기 위해
+        top_dq_via=len(dq_via)-1
+        if(top_dq_via==-1):
+            topelement_dqvia='*'
+        else:
+            topelement_dqvia=dq_via[top_dq_via]
+
+이런 꼴, None이라는건 여러뭐로 설명하기 귀찮으니까, 임의값이나 최소환 문자열화
+
+! 일관된 변수를 사용하다보면, 다양한 상황에서 변수가 재정의될 수 있으니, 다시 정의해주자
+
+! deque는 list처럼 슬라이싱은 안된다.

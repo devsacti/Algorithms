@@ -1,0 +1,37 @@
+cur idx node  0
+before  [] 1
+
+	--now goto next node by function--
+	cur idx node  1
+	before  [] 1
+
+		--now goto next node by function--
+		cur idx node  2
+		val from fuction  0
+		mid partial height  1
+		ongoing  [1]
+		after  [1] 1
+		best of subtree  1
+	val from fuction  1
+	mid partial height  2
+	ongoing  [2]
+
+	--now goto next node by function--
+	cur idx node  3
+	before  [] 1
+
+		--now goto next node by function--
+		cur idx node  4
+		val from fuction  0
+		mid partial height  1
+		ongoing  [1]
+		after  [1] 1
+		best of subtree  1
+	val from fuction  1
+	!!! 다른 갈래의 partial height가 갱신되는 상황 확인-> 자식 노드별로 1을 빌려주는 형식이 되야하고, 초기화 위치를 바꿈
+	mid partial height  3
+	!! 정상대로라면 아래는 2,2가 되야하는데
+	ongoing  [2, 3]
+after  [2, 3] 3
+best of subtree  3
+3

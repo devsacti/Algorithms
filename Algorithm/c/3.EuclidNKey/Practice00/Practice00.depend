@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1602042694 source:c:\users\schiz\onedrive\바탕 화면\practice00\main.c
+	<stdio.h>
+	<string.h>
+
+1601758682 source:c:\users\schiz\onedrive\바탕 화면\practice00\ex-2.c
+	<stdio.h>
+
+1601758680 source:c:\users\schiz\onedrive\바탕 화면\practice00\ex-3.c
+	<stdio.h>
+
+1601758754 source:c:\users\schiz\onedrive\바탕 화면\practice00\ex-1.c
+	<stdio.h>
+
+1602042694 source:c:\users\schiz\onedrive\바탕 화면\컴퓨터알고리즘및실습\algorithm and practices\3. euclidnkey\practice00\main.c
+	<stdio.h>
+	<string.h>
+
