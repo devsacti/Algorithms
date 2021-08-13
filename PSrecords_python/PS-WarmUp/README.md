@@ -41,6 +41,7 @@ L17
 연속부분의 최대합 DP로
 
 L11~14, L18~20 트리와 그래프
+
 단지번호 붙이기, 전염병, 목수의 미로탈출
 최단거리
 플로이드, 크루스칼
@@ -48,17 +49,22 @@ L11~14, L18~20 트리와 그래프
 
 ### concentrated on step1 and step3
 L1~5
+
 L2
 -숫자피라미드
+
 L3
 -class president
+
 L4
 -baseballgame
+
 L5
 -bingo & nqueen
 -streetree
 
 L6~10
+
 L8
 -division, inequal with recursive+dfs
 
