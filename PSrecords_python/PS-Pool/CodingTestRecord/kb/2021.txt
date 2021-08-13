@@ -1,0 +1,7 @@
+1. 2dmatrix and for
+2. heap
+3. startwiths and 문자열 반복
+4. rotate and 자물쇠
+5. SQL
+
+#shellow copy에서 말림
