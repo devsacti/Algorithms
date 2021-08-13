@@ -13,5 +13,5 @@
 ## Step3 : implemetation
  도출한 간이 플로우차트에 따라 코드로 구현
  
-## PS-WarmUp
+## [PS-WarmUp](https://github.com/devsacti/Algorithms_Query/tree/main/PSrecords_python/PS-WarmUp)
  practice
