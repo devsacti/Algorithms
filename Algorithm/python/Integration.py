@@ -20,16 +20,15 @@ from itertools import product
 from itertools import combinations
 from itertools import permutations
 
-# bfs/dfs
+# dfs/bfs
 from collections import defaultdict
 from collections import deque
-
 #dijkstra
 import heapq
 
 #input
-import sys
-input=sys.stdin.readline
+# import sys
+# input=sys.stdin.readline
 
 ## skill
 # base
@@ -162,14 +161,22 @@ def dijkstra(graph,s,shortest,*arg):
     # visited 처럼, 해석하면 안됨, 이 문제는 visited는 논외이고,
     # 최단거리를 도출하기 위한 적절한 초기화과정으로 이해해야함, 아래 2 스텝을 이해하기 위해
     shortest[s]=0
+    ## 시작점 관련해서는 출입문이 2개이고 0과 20이라고 하자
+    ## 그리고 초기화는 20으로 되있어서 부득이 내가 0으로 기입한 상황
     pq=[];heapq.heappush(pq,(0,s))
 
     while(pq):
+        # pop >> try moving to 'now' and check cand interval
         candShortest, now = heapq.heappop(pq)
 
         # '다음 노드'까지의 최단거리를 찾는과정
         # 1. 현재 노드까지의 거리가 최단거리인가
         # 2. 그렇다면, 현재 위치에서 다음 노드를 접근할때의 코스트가 최단거리인다.
+        
+        # 특히 , 시작점에 진입하는 경우, 아래 if가 다소 모호하다 왜냐하면 다른 진입경로가 없다고 생각하기 쉬우니
+        # 그러니까 앞선 전제와같이 20과 0이 있고, 20으로 초기화 되어있을때, 아래와 같은 if를 사용하고
+
+        # 시작점이 아닌 점부터는 러프한 틀, 그리고 추가 판단은 아래 if에서 한다고 이해하자
         if(candShortest>shortest[now]): continue
         else:
             

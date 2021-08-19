@@ -30,7 +30,7 @@ sorting and binarysearch
 ## Practice List
 
 bfs/dfs
-수도배관, 단지 번호 붙이기, 전염병, 목수의 미로탈출
+수도배관, 단지 번호 붙이기, 목수의 미로탈출
 
 dijstra 
 최단거리, 플로이드, 크루스칼
@@ -62,6 +62,3 @@ L6~10
 
 L8
 -division, inequal with recursive+dfs
-
-L15
--연속부분 최대합(window between two point)
