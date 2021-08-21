@@ -1,4 +1,0 @@
-1.
-2. 체스판 비숏의 이동가능 범위 칸수 구하기 with vector 구현
-3. parent or leaf, and root and inner of parent when deal with tree !! dfs
-4. SQL

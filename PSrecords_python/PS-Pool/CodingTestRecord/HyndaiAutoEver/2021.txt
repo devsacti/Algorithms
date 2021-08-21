@@ -1,7 +1,0 @@
-1. bfs 혹은 구현
-달력만들고, 휴일빼고, 근무일 구하기
-
-2. priority que
-
-3. SQL
-where 조절
