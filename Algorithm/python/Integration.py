@@ -176,12 +176,14 @@ def dijkstra(graph,s,shortest,*arg):
         # 특히 , 시작점에 진입하는 경우, 아래 if가 다소 모호하다 왜냐하면 다른 진입경로가 없다고 생각하기 쉬우니
         # 그러니까 앞선 전제와같이 20과 0이 있고, 20으로 초기화 되어있을때, 아래와 같은 if를 사용하고
 
-        # 시작점이 아닌 점부터는 러프한 틀, 그리고 추가 판단은 아래 if에서 한다고 이해하자
+        # 아래 폴문에서 '현재노드'기준 주변 노드로의 최단거리를 갱신했다, 근데, 그 목표노드가 다른 노드에서도 접근가능하기에 이런 
+        # 필터를 통해 부하를 줄인다.
         if(candShortest>shortest[now]): continue
         else:
             
             for adj in graph[now]:
-                cost=candShortest+adj[1]
-                if(cost<shortest[adj[0]]):
-                    shortest[adj[0]]=cost
+                interval,next=adj
+                cost=candShortest+interval
+                if(cost<shortest[next]):
+                    shortest[next]=cost
                     heapq.heappush(pq,(cost,adj[0]))
