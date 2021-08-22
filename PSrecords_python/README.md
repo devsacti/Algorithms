@@ -15,7 +15,9 @@
  
  [주요체크리스트](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS-concept/3.ImplementationErrorList.txt)
 
-## hidden case and steps
+## 🥇 hidden case and steps
+처음 문제이해와 알고리즘화에서 보이지 않는다면
+
 정석적으론 테케 추가를 통해서 검증 => 홀수 대신 짝수 개, 주어진 범위의 양극단 값 like 0,1개, 음수와 양수 등
 
 하지만 문제의 상황별로 히든케이스는 숨는 방법도 다른듯함...일단 위 기본방법들 기입
