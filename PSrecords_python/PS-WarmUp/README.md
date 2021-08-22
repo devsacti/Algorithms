@@ -24,7 +24,7 @@ dp => 연속부분의 최대합 DP로
 sorting and binarysearch => 두 용액, NN단표, 랜선 자르기
 
 # step3-oriented  ps or record
-
+## ps
 L2
 -숫자피라미드
 
@@ -42,3 +42,14 @@ L6~10
 
 L8
 -division, inequal with recursive+dfs
+
+## record
+### implementation related with 2d matrix
+handlingMatrix
+
+vectordesc (how to describe the vector in 2d)
+
+### implement of bruteforce
+recursivebruteforce
++ bfsbruteforce(comming soon!)
+
