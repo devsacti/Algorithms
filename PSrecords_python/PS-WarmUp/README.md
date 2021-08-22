@@ -1,49 +1,29 @@
 # Problem Solving WarmUp to remind key points
 
-## PS
+## PS overview : step 1~3
 step1 : Accurate Comprehesion about Problem
+
+comprehend and analyze the given problem's conditions
 
 step2 : Utilizing and Integrating Algorithms to simulate comprehension
 
 step3 : Implementation
 
-# step1
-
-## Analyze the problem! and make it own experience and ability
-
-## List
+# step1-oriented ps
 
 이상한 계산기
 
-# step2
+# step2-oriented ps
 
-## major Algorithms to be utilized and integrated
+bfs-dfs => 수도배관, 단지 번호 붙이기, 목수의 미로탈출
 
-bfs/dfs
+dijstra(feat. heap) =>최단거리, 플로이드, 크루스칼
 
-dijstra(feat. heap)
+dp => 연속부분의 최대합 DP로
 
-dp
+sorting and binarysearch => 두 용액, NN단표, 랜선 자르기
 
-sorting and binarysearch
-
-## Practice List
-
-bfs/dfs
-수도배관, 단지 번호 붙이기, 목수의 미로탈출
-
-dijstra 
-최단거리, 플로이드, 크루스칼
-
-dp
-연속부분의 최대합 DP로
-
-sorting and binarysearch
-두 용액, NN단표, 랜선 자르기
-
-## step 3
-### concentrated on step1 and step3
-L1~5
+# step3-oriented  ps
 
 L2
 -숫자피라미드
