@@ -19,9 +19,9 @@ bfs-dfs => 수도배관, 단지 번호 붙이기, 목수의 미로탈출
 
 dijstra(feat. heap) =>최단거리, 플로이드, 크루스칼
 
-dp => 연속부분의 최대합 DP로
+dp => makenum,sum_rectangular, 연속부분의 최대합 DP로
 
-sorting and binarysearch => 두 용액, NN단표, 랜선 자르기
+sorting and binarysearch => bisect,두 용액, NN단표, 랜선 자르기
 
 # step3-oriented  ps or record
 ## ps
