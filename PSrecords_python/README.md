@@ -5,7 +5,7 @@
 - 여집합, 역순 우선
 - 벤다이어그램도 필수
 
-## Step2 : utilizing&Integrating with datastructure,libs,algorithms for simulation
+## Step2 : utilizing&Integrating of datastructure,libs,algorithms for simulation
  도출된 변수 및 자료구조, 알고리즘들을 '컴퓨터의 로직으로' 종합하고 평가, 간이 플로우차트
  * 주요 히든 케이스 처리 파트(step1 보다 인덱스나 길이 등 범주 설정 시 영감이 자주온다.)
  * 시간복잡도
