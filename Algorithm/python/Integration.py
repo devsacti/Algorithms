@@ -16,6 +16,31 @@ import math
 #math.gcd
 #math.lcm
 
+# max, min, abs
+min(-5, 3, 0, 3, -5, key=abs)
+max(nums, key=abs)
+
+# sorting with priority and bisect
+e2 = sorted(a, key = lambda person : (person[0],person[2], -person[1]))
+
+from bisect import bisect_left
+from bisect import bisect_right
+
+# caution bisect_left right can output 'out of index' cuz this purpose is 'insert'
+# nums  [1, 1, 2, 2, 3, 3, 3, 4, 5, 10]
+
+# if print(bisect_left(nums,3)) and print(bisect_right(nums,3))
+# index  0  1  2  3  4  5  6  7  8   9
+#                    |                 => result is 4
+#                             |           => result is 7
+# left means that " 3 canbe inserted at 4 "
+# right means that " 3 canbe inserted at 7 "
+
+# so if 11 was given left and right result is 10 which is out of range
+
+# 출처: https://programming119.tistory.com/196 [개발자 아저씨들 힘을모아]
+## and remind parameter binary search by custom function
+
 from itertools import product
 from itertools import combinations
 from itertools import permutations
@@ -35,11 +60,6 @@ import heapq
 # if 문 복수 조건 시 그 안에도 순서가 있다. L4_03; seatNotRecursive
 # 다음 예제에서 볼 수 있듯이 a['nokey']처럼 존재하지 않는 키(nokey)로 값을 가져오려고
 # 할 경우 a['nokey']는 Key 오류를 발생시키고 a.get('nokey')는 None을 돌려준다는 차이가 있다. 어떤것을 사용할지는 여러분의 선택이다.
-
-# sorting list 
-e2 = sorted(a, key = lambda person : (person[0],person[2], -person[1]))
-min(-5, 3, 0, 3, -5, key=abs)
-max(nums, key=abs)
 
 # product cases, combinations cases, permutations cases
 sample=[i for i in range(1,n+1)]
