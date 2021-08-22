@@ -60,3 +60,7 @@ row의 값을 변환하면 matrix에 저장되나?->된다, 하지만 2중 폴�
 4. 기타
 6. 이유는 모르겠지만 [Errno 22] Invalid argument 뜨길래 
 L227.py를 L2_27로 바꾸었더니 컴파일이 정상작동함.
+
+####
+runtime error는 주로 리스트나 매트릭스의 인덱스 초과
+주어진 숫자 범위에 따라서 기준이 되는 minimum, maxmum, interval을 너무 작거나 너무 크게 해서는 안된다!
