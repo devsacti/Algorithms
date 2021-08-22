@@ -12,6 +12,7 @@
 
 ## Step3 : implemetation
  도출한 간이 플로우차트에 따라 코드로 구현
+ [주요체크리스트](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS-concept/3.ImplementationErrorList.txt)
  
 ## [PS-WarmUp](https://github.com/devsacti/Algorithms_Query/tree/main/PSrecords_python/PS-WarmUp)
  practice
