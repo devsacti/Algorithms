@@ -8,13 +8,12 @@
 ## Step2 : utilizations and Integrations of computer algorithms with Time Complexity
 computer algorithms?
 
- Not only bfs,dfs but also modules like datastructure,libs or everything that canbe used for simulation
+Not only bfs,dfs but also modules like datastructure,libs or everything that canbe used for simulation
 
- and what is operated based on computer condtion like 0,1 or programming grammaers which is usually fractious to human...
+and what is operated based on computer condtion like 0,1 or programming grammaers which is usually fractious to human...
 
-도출된 변수 및 자료구조, 알고리즘들을 '컴퓨터의 로직으로' 종합하고 평가, 간이 플로우차트
 * 주요 히든 케이스 처리 파트(step1 보다 인덱스나 길이 등 범주 설정 시 영감이 자주온다.)
-* 시간복잡도
+* 종합 시간복잡도도 도출
 
 ## Step3 : implemetation
  도출한 간이 플로우차트에 따라 코드로 구현
