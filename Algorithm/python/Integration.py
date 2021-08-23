@@ -22,6 +22,14 @@ max(nums, key=abs)
 
 # sorting with priority and bisect
 e2 = sorted(a, key = lambda person : (person[0],person[2], -person[1]))
+## 다중 정렬은 어떻게 구현할까? 
+## 내 예상
+## (1, 4, 1)
+## (2, 3, 3)
+## (2, 2, 3)
+## (4, 1, 4)
+
+##  우선 각 인스턴스의 0번째값으로만 인덱스 정렬, 그 다음 
 
 from bisect import bisect_left
 from bisect import bisect_right
@@ -45,13 +53,28 @@ from itertools import product
 from itertools import combinations
 from itertools import permutations
 
-# dfs/bfs
+# dfs
 from collections import defaultdict
+# bfs
 from collections import deque
-#dijkstra
+# dijstra : bfs + priority queue(heap)
 import heapq
+## heapq는 오름차순으로 주어진 값을 정렬하는 최소힙
+heap=[1,2,3,4,5]
+heapq.heapify(heap)
+# or
+pq=[]
+for item in heap:
+    heapq.heappush(pq,item)
+## 별도의 우선순위 산출을 통해, 가령 -, (0,origin9),(1,origin3) 등으로 재정렬 가능
+for item in heap:
+    heapq.heappush(pq,(-item,item))
 
-#input
+## 특성상 pq[0]은 최소값이다. 현재 트리의 root
+## 하지만, 방금 뽑아낸 값과 그 다음 트리의 root를 비교 시에 적합
+## 다중정렬에는 부적합
+
+# input
 # import sys
 # input=sys.stdin.readline
 
