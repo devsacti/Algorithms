@@ -1,4 +1,4 @@
-이것은 평생을 건 싸움, LG CNS
+이것은 평생을 건 싸움
 
 # Error And Solution
 ## 1. accuracy error
