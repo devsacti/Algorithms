@@ -1,9 +1,17 @@
-# 코딩문제 풀이 스텝 : step 1,2,3 반복
+# 코딩문제 풀이 스텝 : ps 1,2,3 반복
 
-## Step1 : Accurate Comprehension
- 문제, 인아웃 조건을 이해하고, 객체와 절차를 정리
+## ps1 : Accurate Comprehension
+## 문제 읽으면서 easy flowchart 만들기 : 로직화(그러나 컴퓨터로직화까진 not yet) 
+ex) 패티 위에 치즈를 놓는다. => 패티 next 치즈
+
 - 여집합, 역순 우선
 - 벤다이어그램도 필수
+
+## in-out check
+## in
+!! 중복 발생 가능성 체크 !!
+출력값 형태, 입력값의 범위(자연수, 정수, 실수 등)
+## out
 
 ## Step2 : utilizations and Integrations of computer algorithms with Time Complexity
 computer algorithms?
