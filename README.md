@@ -1,6 +1,8 @@
 # Algorithms_Query
 Algorithms_datastructure/SQL
 
+it is base conception of developing app, utiliziing cloud, and everything
+
 ## description
 Algorithm : from datastructure to algorithm methods like dfs,bfs
 
