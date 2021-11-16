@@ -31,14 +31,17 @@
 
 ### ps2.2 Integrations of computer algorithms
 
-앞서 만든 모듈들을 합치면서, 여유 시간 내 시간복잡도까지 산출
+앞서 만든 모듈들을 이론상 종합하면서, 여유 시간 내 시간복잡도까지 산출
 
 * 종합 시간복잡도도 도출
 
 ## ps3 : implemetation
- 도출한 간이 플로우차트에 따라 코드로 구현
+정리된 모듈들은 코드로 구현
+
+다만, 시간 상 대체로 ps3을 진행하면서 ps1,2를 하게되는데, 결과적으론 순환구조에 따른다.
+
  
- [주요체크리스트](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS-concept/3.ImplementationErrorList.txt)
+[주요체크리스트](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS-concept/3.ImplementationErrorList.txt)
 
 ## 🥇 hidden case and steps
 처음 문제이해와 알고리즘화에서 보이지 않는다면
