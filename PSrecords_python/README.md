@@ -18,7 +18,7 @@
 
 
 ## ps2 : utilizations and Integrations of computer algorithms with Time Complexity
-컴퓨터 알고리즘 및 통합
+해석에 컴퓨터 알고리즘 활용 및 통합
 
 컴퓨터 알고리즘이란, 대표적인 bfs,dfs뿐만 아니라 '프로그래밍 언어로 구현가능한'된 자료구나 라이브러리, 그리고 상황에 맞는 즉석모듈형태를 모두 포함
 
