@@ -2,8 +2,6 @@
 코딩 문제 풀이 단계 순환
 
 ## ps1 : Accurate Comprehension
-정확한 문제 해석 
-
 ['정확한 문제 해석' 관련경험]()
 
 ### ps1.1 문제 눈으로 선그으면서 읽고, 개별 조건에 대한 명시적 이해
@@ -36,19 +34,16 @@ Condition2 : 증가하는 수열에 한해서만 출력값 요구
 
 
 ## ps2 : utilizations and Integrations of computer algorithms with Time Complexity
-해석에 컴퓨터 알고리즘 활용 및 통합
+['(해석에) 컴퓨터 알고리즘 활용 및 통합' 관련경험]()
 
-컴퓨터 알고리즘이란, 대표적인 bfs,dfs뿐만 아니라 '프로그래밍 언어로 구현가능한'된 자료구나 라이브러리, 그리고 상황에 맞는 즉석모듈형태를 모두 포함
-
-['컴퓨터 알고리즘 활용 및 통합' 관련경험]()
-
+내가 생각하는 컴퓨터 알고리즘이란, '프로그래밍 언어로 구현가능한'된 라이브러리, 자료구조, bfs같은 알고리즘, 그리고 주어진 상황 맞춤형 프로세스 모두를 포함
 
 ### ps2.1 utilizations of computer algorithms
 한번에 다 만들려고 하지말고,퍼즐형태이든, 확장형태이든 Unit 단위로 쪼개서 모듈을 코드로 구현한다.
 
 그리고 여유 시간 내에 에러체크 필수
 
-* 주요 히든 케이스 처리 파트(step1 보다 인덱스나 길이 등 범주 설정 시 영감이 자주온다.)
+* 주요 히든 케이스 처리 파트(충분한 ps1.1 후 구체적으로 인덱스나 길이 등 범주 설정 시 영감이 자주온다.)
 
 ### ps2.2 Integrations of computer algorithms
 
@@ -57,20 +52,22 @@ Condition2 : 증가하는 수열에 한해서만 출력값 요구
 * 종합 시간복잡도도 도출
 
 ## ps3 : implemetation
+['구현' 관련경험](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS-concept/3.ImplementationErrorList.txt)
+
 정리된 모듈들은 코드로 구현
 
 다만, 시간 상 대체로 ps3을 진행하면서 ps1,2를 하게되는데, 결과적으론 순환구조에 따른다.
-
  
-['구현' 관련경험](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS-concept/3.ImplementationErrorList.txt)
 
-## 🥇 hidden case and steps
-처음 문제이해와 알고리즘화에서 보이지 않는다면
+## 🥇 sincere solution about hidden case
+처음 문제 이해와 알고리즘화에서 보이지 않는다면(대체로 그럼)
 
-정석적으론 테케 추가를 통해서 검증 => 홀수 대신 짝수 개, 주어진 범위의 양극단 값 like 0,1개, 음수와 양수 등
+정석적으론 개인적인 테케 추가 통해서 검증 => 홀수 대신 짝수 개, 주어진 범위의 양극단 값 like 0,1개, 음수와 양수 등
 
-하지만 문제의 상황별로 히든케이스는 숨는 방법도 다른듯함...일단 위 기본방법들 기입
+하지만 문제의 상황별로 히든케이스는 숨는 방법도 다른듯함...일단 위 기본방법들은 시도하되,
+
+중요한 것은 시간관리이므로 빠르게 다음문제로 넘어간다.
 
 
-## [PS-WarmUp](https://github.com/devsacti/Algorithms_Query/tree/main/PSrecords_python/PS-WarmUp)
- practice
+## major PS practice
+[PS-WarmUp](https://github.com/devsacti/Algorithms_Query/tree/main/PSrecords_python/PS-WarmUp)
