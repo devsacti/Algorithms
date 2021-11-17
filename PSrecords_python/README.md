@@ -2,7 +2,7 @@
 코딩 문제 풀이 단계 순환
 
 ## ps1 : Accurate Comprehension
-['정확한 문제 해석' 관련 경험들]()
+['정확한 문제 해석' 관련 경험들](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS_major_experience/ps1.md)
 
 ### ps1.1 문제 눈으로 선그으면서 상황 및 개별 조건에 대한 명시적 이해
 기본적인 input-process-output 과정 이해, 주로 주어진 예제를 중심으로 체크
@@ -22,7 +22,7 @@
 모듈화 : 관련 종합 패턴을 참고하여 easy flowchart 만들기(그러나 컴퓨터로직화까진 not yet) 
 
 ## ps2 : utilizations and Integrations of computer algorithms to interpretation with Time Complexity
-['(해석에) 컴퓨터 알고리즘 활용 및 통합' 관련 경험들]()
+['(해석에) 컴퓨터 알고리즘 활용 및 통합' 관련 경험들](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS_major_experience/ps2.md)
 
 내가 생각하는 컴퓨터 알고리즘이란, '프로그래밍 언어로 구현가능한'된 라이브러리, 자료구조, bfs같은 알고리즘, 그리고 주어진 상황 맞춤형 프로세스 모두를 포함
 
@@ -49,7 +49,7 @@
 하지만 문제의 상황별로 히든히든케이스는 숨는 방법이 무한가지인듯함...일단 위 기본방법들은 시도하되,중요한 것은 시간관리이므로 빠르게 다음문제로 넘어간다.
 
 ## ps3 : implemetation
-['구현' 관련 경험들](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS-concept/3.ImplementationErrorList.txt)
+['구현' 관련 경험들](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS_major_experience/ps3.md)
 
 정리된 모듈들은 코드로 구현
 
