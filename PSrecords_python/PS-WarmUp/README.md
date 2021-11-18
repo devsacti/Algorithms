@@ -41,7 +41,7 @@ L6~10
 L8
 -division, inequal with recursive+dfs
 
-## effective and useful implementation records
+## [effective and useful implementation records](https://github.com/devsacti/Algorithms_Query/tree/main/PSrecords_python/PS-WarmUp/UsefulImplRecords)
 ### handlingMatrix
 
 ### how to describe the vector in 2d
