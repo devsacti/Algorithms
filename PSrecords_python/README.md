@@ -24,7 +24,7 @@
 ## ps2 : utilizations and Integrations of computer algorithms to interpretation with Time Complexity
 ['(해석에) 컴퓨터 알고리즘 활용 및 통합' 관련 경험들](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS_major_experience/ps2.md)
 
-내가 생각하는 컴퓨터 알고리즘이란, '프로그래밍 언어로 구현가능한'된 라이브러리, 자료구조, bfs같은 알고리즘, 그리고 주어진 상황 맞춤형 프로세스 모두를 포함
+내가 생각하는 컴퓨터 알고리즘이란, '프로그래밍 언어로 구현가능한'된 자료구조, bfs같은 알고리즘, 그리고 주어진 상황 맞춤형 알고리즘 모두를 포함
 
 그리고 이를 앞선 문제에 대한 해석에 접목하여 컴퓨터 언어로 시뮬레이션화하는 것을 ps과정이라고 이해
 
@@ -51,7 +51,7 @@
 ## ps3 : implemetation
 ['구현' 관련 경험들](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS_major_experience/ps3.md)
 
-정리된 모듈들은 코드로 구현
+정리된 모듈들은 라이브러리 등을 바탕으로 코드로 구현
 
 다만, 시간 상 대체로 ps3을 진행하면서 ps1,2를 하게되는데, 결과적으론 순환구조에 따른다.
 
