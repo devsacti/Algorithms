@@ -24,7 +24,7 @@ sorting and binarysearch => bisect,두 용액, NN단표, 랜선 자르기
 # ps3-oriented practice or record
 ## ps
 L2
--숫자피라미드
+-[숫자피라미드](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L2/%EC%88%AB%EC%9E%90%ED%94%BC%EB%9D%BC%EB%AF%B8%EB%93%9C.py)
 
 L3
 -class president

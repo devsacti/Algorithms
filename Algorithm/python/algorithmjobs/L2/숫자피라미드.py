@@ -1,99 +1,64 @@
-# template
-from collections import deque
+# accurate comprehension
+## ps1.1
+## pyramid pattern
+## numbering ; 1 ~, and odd index of row ; right to left, even index of row ; left to right
+## '10 becomes 1' 
 
-def getArgs():
-    #N : total level of pyramid , S : startnumber
-    N, S = map(int,input().split())
-    '''
-    for i in range(n):
-        seqs.append(list(map(int, input().split())))
-    '''
+## ps1.2
 
-    return N,S
+# utilizations and integrations of algorithms
+## ps2.1
+## part1.1 : pyramid pattern => 1,3,5,7,... pieces from sample ; total cnt is n*n
+## part1.2 : '10 becomes 1' => samplespace 1~9
+## part2 : index of row => if idx%2==1
 
-def makeval_level(N):
-    Lens_levels=deque([2*domain+1 for domain in range(N)])
-    sum_lens=sum(Lens_levels)
+## ps2.2
+## part1.2 => part1.1 => part2
 
-    return Lens_levels, sum_lens
+# Impl
 
-def makeElement(S, sum_len):
-    #given pattern
-    pattern=[i for i in range(1,10)]
-    idx_start=pattern.index(S)
-    #print(pattern[idx_start],pattern)
-
-    elements=deque()
-
-    for i in range(sum_len):
-        elements.append(pattern[(idx_start%9)])
-        idx_start=idx_start+1
-
-    return elements
-
-def makelevel(N,levelnum, Lens_levels, elements):
-    Lenlevel=Lens_levels.popleft()
-    #print('Len_level', Lenlevel)
-
-    leveldq=deque()
-
-    if(levelnum%2!=0):
-        for i in range(Lenlevel):
-            leveldq.appendleft(elements.popleft())
-        for i in range(N-levelnum):
-            leveldq.appendleft(' ')
-    else:
-        for i in range(N-levelnum):
-            leveldq.append(' ')
-        for i in range(Lenlevel):
-            leveldq.append(elements.popleft())
+if __name__=="__main__":
+    n,s = map(int, input().split())
+  
+    # part 1.2    
+    # samplespace
+    samplespace=[i for i in range(1,10)]
     
-    #print(leveldq)
-    #print(elements)
-
-    return leveldq
-
-
-
-def makePyraid(N,Lens_levels,elements):
-    leveldq=deque()
-    leveldqs=deque()
-
-    for idx_level in range(N):
-        levelnum=idx_level+1
+    # sampling from samplespace
+    start_idx=samplespace.index(s)
+    cnt_sampling=n*n
+  
+    sample=[]
+    while(cnt_sampling>0):
+        sample.append(samplespace[(start_idx%9)])
         
-        leveldq=makelevel(N,levelnum,Lens_levels,elements)
-
-        leveldqs.append(leveldq)
-
-    #print(leveldqs)
-
-    return leveldqs
-
-def makeResult(leveldqs):
-    for i in range(len(leveldqs)):
-        level=leveldqs.popleft()
-        for i in level:
-            print(i,end='')
-        print()
-
-if __name__=='__main__':
-    N,S = getArgs()
-    #print(N,S)
-    # 5 3
-
-    Lens_levels, sum_lens=makeval_level(N)
-    #print(Lens_levels)
-    #[1,3,5,7,9]
-
-    elements=makeElement(S,sum_lens)
-    print(elements)
-    # [1,2,3,4~9,1]
-
-    leveldqs=makePyraid(N,Lens_levels,elements)
-    makeResult(leveldqs)
-
-
-
-
-
+        start_idx+=1
+        cnt_sampling-=1
+    
+    # print(sample)
+    
+    # part 1.1
+    # count of item of row of pyramid
+    # pattern 2*n+1
+    cnt_item_row=[2*n+1 for n in range(n)]
+    
+    s_idx=0
+    e_idx=0
+    
+    pyramid={}
+    
+    for num, cnt in enumerate(cnt_item_row,1):
+        e_idx=s_idx+cnt
+        
+        # part 2
+        
+        if(num%2==1):
+            pyramid[num]=list(reversed(sample[s_idx:e_idx]))
+        else:
+            pyramid[num]=sample[s_idx:e_idx]
+        s_idx=e_idx
+        
+    for k,v in pyramid.items():
+      print(' '*(n-k),end="")
+      print("".join(map(str,v)))
+      
