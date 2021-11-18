@@ -36,10 +36,11 @@ L5
 -bingo & nqueen
 -streetree
 
-L6~10
-
 L8
 -division, inequal with recursive+dfs
+
+L10
+-NN단표
 
 ## [effective and useful implementation records](https://github.com/devsacti/Algorithms_Query/tree/main/PSrecords_python/PS-WarmUp/UsefulImplRecords)
 ### handlingMatrix
