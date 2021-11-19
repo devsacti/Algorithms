@@ -53,11 +53,10 @@
 
 * 주요 히든 케이스 처리 파트(충분한 ps1.1 후 구체적으로 인덱스나 길이 등 범주 설정 시 영감이 자주온다.)
 
-### ps2.2 Integrations of computer algorithms (with Time Complexity)
+### ps2.2 Integration of computer algorithms (with Time Complexity)
 
-앞서 만든 모듈들을 종합하면서, 여유 시간 내 시간복잡도까지 산출
-
-* 종합 시간복잡도도 도출
+앞서 만든 모듈들을 종합하면서, 여유 시간 내 종합적인시간복잡도까지 산출
+*단, 초기 구상모듈 1개로 충분할 경우, Integration은 생략가능
 
 ### ps2.3🥇 sincere solution about hidden case
 히든케이스는 안보여서 히든케이스이고, 앞선 단계에서 보이지 않는 히든히든케이스의 경우
