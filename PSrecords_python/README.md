@@ -5,21 +5,22 @@
 ['정확한 문제 해석' 관련 경험들](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS_major_experience/ps1.md)
 
 ### ps1.1 문제 눈으로 선그으면서 상황 및 개별 조건에 대한 명시적 이해
-기본적인 input-process-output 과정 이해, 주로 주어진 예제를 중심으로 체크
+문제로부터 input-process-output 과정 이해, 주로 주어진 예제를 중심으로 체크
 
 특히 넘버링이 0부터인지 1부터인지, 단방향 또는 양방향(무방향), 입력값 범위 보고 시간복잡도 고려해야되나 확인(greedy or binary search 등), "비례,반비례"는 기입
 
 #### 참고사항
 여집합, 역순 우선, 벤다이어그램도 필수
 
-### ps1.2 패턴 찾기와 예외처리, 그리고 모듈화
+### ps1.2 패턴 찾기와 예외처리, 그리고 구조화
 패턴 찾기와 예외처리 :
 
 상황 및 조건들 간 함축적 관계에서 특정패턴을 도출하거나 관련 이론을 통한 문제 해석 후속값들은 주로 이에 근거하여 예외처리한다. 
 
 *개인적으로 이 부분은 많은 경험이 쌓여야 능력이 성장하는 듯하다.
 
-모듈화 : 관련 종합 패턴을 참고하여 easy flowchart 만들기(그러나 컴퓨터로직화까진 not yet) 
+구조화 : 관련 종합 패턴을 참고하여 easy flowchart 만들기(그러나 컴퓨터로직화까진 not yet) 
+*시간상 주로 머릿속으로만 하고, ps2.2에서 모듈 간 연결관계를 '대략적으로' 명시화하는 것이 일반적
 
 ## ps2 : utilizations and Integrations of computer algorithms for Comprehension
 ['(해석에) 컴퓨터 알고리즘 활용 및 통합' 관련 경험들](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS_major_experience/ps2.md)
@@ -37,7 +38,7 @@
 
 ### ps2.2 Integrations of computer algorithms (with Time Complexity)
 
-앞서 만든 모듈들을 이론상 종합하면서, 여유 시간 내 시간복잡도까지 산출
+앞서 만든 모듈들을 종합하면서, 여유 시간 내 시간복잡도까지 산출
 
 * 종합 시간복잡도도 도출
 
