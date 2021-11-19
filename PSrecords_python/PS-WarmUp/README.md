@@ -8,7 +8,7 @@ ps2 : Utilizing and Integrating Algorithms to interpretation with Time Comlexity
 ps3 : Implementation
 
 # ps1-oriented practice or record
-class president => 예제에 속지 마라, 예제는 5*5지만, 전체는 n*5이다.
+class president => 예제에 속지 마라, 예제(부분)는 5*5지만, 실제(전체)는 n*5이다.
 
 이상한 계산기
 
