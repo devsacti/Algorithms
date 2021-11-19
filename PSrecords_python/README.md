@@ -3,17 +3,34 @@
 
 ## ps1 : Comprehension about Problem
 ['정확한 문제 해석' 관련 경험들](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS_major_experience/ps1.md)
+*실제 코딩 테스트에서는 시간 제약상 ps1에선 핵심적인 부분,특히 ps1.2,만 기록할 수 있다.
 
-### ps1.1 문제 눈으로 선그으면서 상황 및 개별 조건에 대한 명시적 이해
-문제로부터 input-process-output 과정 이해, 주로 주어진 예제를 중심으로 체크
+### ps1.1 Analysis
+문제 눈으로 선그으면서 상황 및 개별 조건에 대한 명시적 이해
+
+문제로부터 
+
+설명/조건1 : ~
+
+설명/조건2 : ~
+
+설명/조건3 : ~
+
+...
 
 특히 넘버링이 0부터인지 1부터인지, 단방향 또는 양방향(무방향), 입력값 범위 보고 시간복잡도 고려해야되나 확인(greedy or binary search 등), "비례,반비례"는 기입
 
 #### 참고사항
 여집합, 역순 우선, 벤다이어그램도 필수
 
-### ps1.2 패턴 찾기와 예외처리, 그리고 구조화
+### ps1.2 drawing pattern, exception and easy flowchart
+패턴 찾기와 예외처리, 그리고 구조화
+
 패턴 찾기와 예외처리 :
+
+예제의 함정(위 링크의 Error and Solution2에 설명)을 주의하되,
+
+주로 입력-출력 예시를 바탕으로,
 
 상황 및 조건들 간 함축적 관계에서 특정패턴을 도출하거나 관련 이론을 통한 문제 해석 후속값들은 주로 이에 근거하여 예외처리한다. 
 

@@ -8,7 +8,18 @@ as-is : print('No')
 
 to-be : print('NO')
 
-#### Error and Solution2 : misunderstanding => 우선 주어진 예제말고 다른 것도 스스로 생각한다. 그리고 문제를 많이 푼다.
+#### Error and Solution2 : example misunderstanding => imagine another example aside from given
+!! 예제의 함정 : 주어진 예제에만 맞춰서 나도 모르게 전체 패턴을 놓침 !!
+
+우선 주어진 예제말고 다른 것도 스스로 생각한다. 그리고 문제를 많이 푼다.
+
+가령1,
+
+L3 class President에서 주어진 예제는 5행 5열이나 실제론 n행 5열이다.
+
+이를 곡해하여 로직을 5라는 매직넘버에 맞춰서 짤경우, 나머지 케이스가 모두 에러된다.
+
+가령2,
 
 L3 maxofarr 문제에서
 
