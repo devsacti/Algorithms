@@ -8,19 +8,19 @@
 
 # utilizations and integrations of algorithms
 ## ps2.1
-## part1.1 : pyramid pattern => 1,3,5,7,... pieces from sample ; total cnt is n*n
-## part1.2 : '10 becomes 1' => samplespace 1~9
-## part2 : index of row => if idx%2==1
+## Module 1.1 : pyramid pattern => 1,3,5,7,... pieces from sample ; total cnt is n*n
+## Module 1.2 : '10 becomes 1' => samplespace 1~9
+## Module 2 : index of row => if idx%2==1
 
 ## ps2.2
-## part1.2 => part1.1 => part2
+## Module 1.2 => Module 1.1 => Moudle 2
 
 # Impl
 
 if __name__=="__main__":
     n,s = map(int, input().split())
   
-    # part 1.2    
+    # Module 1.2    
     # samplespace
     samplespace=[i for i in range(1,10)]
     
@@ -37,7 +37,7 @@ if __name__=="__main__":
     
     # print(sample)
     
-    # part 1.1
+    # Module 1.1
     # count of item of row of pyramid
     # pattern 2*n+1
     cnt_item_row=[2*n+1 for n in range(n)]
@@ -50,7 +50,7 @@ if __name__=="__main__":
     for num, cnt in enumerate(cnt_item_row,1):
         e_idx=s_idx+cnt
         
-        # part 2
+        # Module 2
         
         if(num%2==1):
             pyramid[num]=list(reversed(sample[s_idx:e_idx]))
