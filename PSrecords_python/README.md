@@ -1,7 +1,7 @@
 # Coding Problem Solving step cycle : step 1 => 2 => 3 => 1
 코딩 문제 풀이 단계 순환
 
-## ps1 : Accurate Comprehension
+## ps1 : Comprehension about Problem
 ['정확한 문제 해석' 관련 경험들](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS_major_experience/ps1.md)
 
 ### ps1.1 문제 눈으로 선그으면서 상황 및 개별 조건에 대한 명시적 이해
@@ -21,7 +21,7 @@
 
 모듈화 : 관련 종합 패턴을 참고하여 easy flowchart 만들기(그러나 컴퓨터로직화까진 not yet) 
 
-## ps2 : utilizations and Integrations of computer algorithms to interpretation with Time Complexity
+## ps2 : utilizations and Integrations of computer algorithms for Comprehension
 ['(해석에) 컴퓨터 알고리즘 활용 및 통합' 관련 경험들](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS_major_experience/ps2.md)
 
 내가 생각하는 컴퓨터 알고리즘이란, '프로그래밍 언어로 구현가능한'된 자료구조, bfs같은 알고리즘, 그리고 주어진 상황 맞춤형 알고리즘 모두를 포함
@@ -35,7 +35,7 @@
 
 * 주요 히든 케이스 처리 파트(충분한 ps1.1 후 구체적으로 인덱스나 길이 등 범주 설정 시 영감이 자주온다.)
 
-### ps2.2 Integrations of computer algorithms
+### ps2.2 Integrations of computer algorithms (with Time Complexity)
 
 앞서 만든 모듈들을 이론상 종합하면서, 여유 시간 내 시간복잡도까지 산출
 
