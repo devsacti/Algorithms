@@ -1,5 +1,4 @@
 ## ps3 experience : example || Error and Solution
-['구현' 관련 경험들](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS-concept/3.ImplementationErrorList.txt)
 
 #### Error and Solution 1
 Error : shallow copy 및 인덱스 초기화(특히 다중 반복문 내)

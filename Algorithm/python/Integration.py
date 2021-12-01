@@ -65,6 +65,8 @@ print(sample)
 print(sample2)
 
 allcases=list(product(sample,sample2))
+#or
+totalcases=list(product(samplespace,repeat=3))
 print(allcases)
 
 combinations_cases=list(combinations(sample,r))
