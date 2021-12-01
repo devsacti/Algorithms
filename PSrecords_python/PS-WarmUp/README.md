@@ -28,10 +28,10 @@ L2
 -[숫자피라미드](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L2/%EC%88%AB%EC%9E%90%ED%94%BC%EB%9D%BC%EB%AF%B8%EB%93%9C.py)
 
 L3
--class president
+-[class president](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L3/L3_12classpriesident.py)
 
 L4
--baseballgame
+-[baseballgame](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L4/L4_04baseballgame.py)
 
 L5
 -bingo & nqueen
