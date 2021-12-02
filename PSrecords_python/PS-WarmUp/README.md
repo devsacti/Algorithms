@@ -32,9 +32,10 @@ L3
 
 L4
 -[baseballgame](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L4/L4_04baseballgame.py)
+- bingo
+- nqueen
 
 L5
--bingo & nqueen
 -streetree
 
 L8
