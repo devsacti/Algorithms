@@ -31,9 +31,9 @@ L3
 -[class president](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L3/L3_12classpriesident.py)
 
 L4
--[baseballgame](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L4/L4_04baseballgame.py)
-- bingo
-- nqueen
+-[baseballgame](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L4/L4_04baseballgame.py),
+  bingo,
+  nqueen
 
 L5
 -streetree
