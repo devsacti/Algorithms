@@ -17,7 +17,10 @@ L5
 
 
 # ps2-oriented practice or record
-sorting and binarysearch => 랜선 자르기, 두 용액, NN단표 
+sorting and binarysearch 
+[랜선 자르기](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS-Pool/baekjoon/b1654.py), 
+두 용액, 
+NN단표 
 
 bfs-dfs => 수도배관, 단지 번호 붙이기, 목수의 미로탈출
 
@@ -27,16 +30,14 @@ dijstra(feat. heap) => 최단거리, 플로이드, 크루스칼
 
 # ps3-oriented practice or record
 ## ps
-L2
+
 -[숫자피라미드](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L2/%EC%88%AB%EC%9E%90%ED%94%BC%EB%9D%BC%EB%AF%B8%EB%93%9C.py)
 
-L3
 -[class president](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L3/L3_12classpriesident.py)
 
-L4
 -[baseballgame](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L4/L4_04baseballgame.py),
-  bingo,
-  nqueen
+  [bingo](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L4/L4_01bingo_refactoring.py),
+  [nqueen](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS-Pool/baekjoon/b9663_refactoring.py)
 
 
 
