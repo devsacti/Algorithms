@@ -19,7 +19,7 @@ L5
 # ps2-oriented practice or record
 sorting and binarysearch 
 [랜선 자르기](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS-Pool/baekjoon/b1654.py), 
-두 용액, 
+[두 용액](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS-Pool/baekjoon/b2470%EB%91%90%EC%9A%A9%EC%95%A1.py), 
 NN단표 
 
 bfs-dfs => 수도배관, 단지 번호 붙이기, 목수의 미로탈출
