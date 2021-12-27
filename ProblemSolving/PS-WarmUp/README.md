@@ -18,8 +18,8 @@ L5
 
 # ps2-oriented practice or record
 sorting and binarysearch 
-[랜선 자르기](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS-Pool/baekjoon/b1654.py), 
-[두 용액](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS-Pool/baekjoon/b2470%EB%91%90%EC%9A%A9%EC%95%A1.py), 
+[랜선 자르기](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/PSrecords_python/PS-Pool/baekjoon/b1654.py), 
+[두 용액](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/PSrecords_python/PS-Pool/baekjoon/b2470%EB%91%90%EC%9A%A9%EC%95%A1.py), 
 NN단표 
 
 bfs-dfs => 수도배관, 단지 번호 붙이기, 목수의 미로탈출
@@ -31,17 +31,17 @@ dijstra(feat. heap) => 최단거리, 플로이드, 크루스칼
 # ps3-oriented practice or record
 ## ps
 
--[숫자피라미드](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L2/%EC%88%AB%EC%9E%90%ED%94%BC%EB%9D%BC%EB%AF%B8%EB%93%9C.py)
+-[숫자피라미드](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/Algorithms/python/algorithmjobs/L2/%EC%88%AB%EC%9E%90%ED%94%BC%EB%9D%BC%EB%AF%B8%EB%93%9C.py)
 
--[class president](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L3/L3_12classpriesident.py)
+-[class president](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/Algorithms/python/algorithmjobs/L3/L3_12classpriesident.py)
 
--[baseballgame](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L4/L4_04baseballgame.py),
-  [bingo](https://github.com/devsacti/Algorithms_Query/blob/main/Algorithm/python/algorithmjobs/L4/L4_01bingo_refactoring.py),
-  [nqueen](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS-Pool/baekjoon/b9663_refactoring.py)
+-[baseballgame](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/Algorithm/python/algorithmjobs/L4/L4_04baseballgame.py),
+  [bingo](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/Algorithm/python/algorithmjobs/L4/L4_01bingo_refactoring.py),
+  [nqueen](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/PSrecords_python/PS-Pool/baekjoon/b9663_refactoring.py)
 
 
 
-## [effective and useful implementation records](https://github.com/devsacti/Algorithms_Query/tree/main/PSrecords_python/PS-WarmUp/UsefulImplRecords)
+## [effective and useful implementation records](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/PSrecords_python/PS-WarmUp/UsefulImplRecords)
 ### handlingMatrix
 
 ### how to describe the vector in 2d
