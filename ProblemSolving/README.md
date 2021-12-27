@@ -2,7 +2,8 @@
 코딩 문제 풀이 단계 순환
 
 ## ps1 : Comprehension about Problem
-['정확한 문제 해석' 관련 경험들](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS_major_experience/ps1.md)
+['정확한 문제 해석' 관련 경험들](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/ProblemSolving/PS_major_experience/ps1.md)
+
 *실제 코딩 테스트에서는 시간 제약상 ps1에선 핵심적인 부분,특히 ps1.2,만 기록할 수 있다.
 
 ### ps1.1 Analysis
@@ -23,20 +24,21 @@
 #### 참고사항
 여집합, 역순 우선, 벤다이어그램도 필수
 
-### ps1.2 drawing pattern, exception and easy flowchart
-패턴 찾기와 예외처리, 그리고 구조화
+### ps1.2 drawing pattern,exception and making formulation
+패턴 찾기와 예외처리, 그리고 공식만들기
 
-패턴 찾기와 예외처리 :
+-패턴(또는 규칙, 로직, 등) 찾기와 예외처리 :
 
 예제의 함정(위 링크의 Error and Solution2에 설명)을 주의하되,
 
-주로 입력-출력 예시를 바탕으로,
+주로 입력-출력 예시를 바탕으로, 상황 및 조건들 간 함축적 관계에서 특정패턴을 도출하거나 관련 이론을 통한 문제 해석 후속값들은 주로 이에 근거하여 예외처리한다. 
 
-상황 및 조건들 간 함축적 관계에서 특정패턴을 도출하거나 관련 이론을 통한 문제 해석 후속값들은 주로 이에 근거하여 예외처리한다. 
+대표적으로 ideal case를 상정한 접근 및 패턴 도출이 있다.
 
 *개인적으로 이 부분은 많은 경험이 쌓여야 능력이 성장하는 듯하다.
 
-구조화 : 관련 종합 패턴을 참고하여 easy flowchart 만들기(그러나 컴퓨터로직화까진 not yet) 
+-공식화 : 관련 종합 패턴을 참고하여 간단한 도식이나 공식으로 표현하기(그러나 컴퓨터로직화까진 not yet)
+
 *시간상 주로 머릿속으로만 하고, ps2.2에서 모듈 간 연결관계를 '대략적으로' 명시화하는 것이 일반적
 
 ## ps2 : utilizations and Integrations of computer algorithms for Comprehension
