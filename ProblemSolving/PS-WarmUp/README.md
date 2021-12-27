@@ -1,22 +1,17 @@
 # Problem Solving WarmUp to remind key points
 
-## PS overview : step 1~3
-ps1 : Accurate Comprehesion about Problem
-
-ps2 : Utilizing and Integrating Algorithms to interpretation with Time Comlexity
-
-ps3 : Implementation
-
 # ps1-oriented practice or record
+##
 class president => 예제에 속지 마라, 예제(부분)는 5행 5열이지만, 실제(전체)는 n행 5열이다.
-
+##
 이상한 계산기
-
+##
 L5
 -streetree
 
 
 # ps2-oriented practice or record
+##
 sorting and binarysearch 
 
 [랜선 자르기](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-Pool/baekjoon/b1654), 
@@ -25,6 +20,7 @@ sorting and binarysearch
 
 [NN단표](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/Algorithms/python/algorithmjobs/L10/L10_07NNtable.py) 
 
+##
 bfs-dfs 
 
 수도배관
@@ -33,8 +29,10 @@ bfs-dfs
 
 목수의 미로탈출
 
+##
 dp => makenum,sum_rectangular, 연속부분의 최대합 DP로
 
+##
 dijstra(feat. heap) => 최단거리, 플로이드, 크루스칼
 
 # ps3-oriented practice or record
