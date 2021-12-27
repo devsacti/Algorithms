@@ -18,11 +18,20 @@ L5
 
 # ps2-oriented practice or record
 sorting and binarysearch 
-[랜선 자르기](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/PSrecords_python/PS-Pool/baekjoon/b1654.py), 
-[두 용액](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/PSrecords_python/PS-Pool/baekjoon/b2470%EB%91%90%EC%9A%A9%EC%95%A1.py), 
-NN단표 
 
-bfs-dfs => 수도배관, 단지 번호 붙이기, 목수의 미로탈출
+[랜선 자르기](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-Pool/baekjoon/b1654), 
+
+[두 용액](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-Pool/baekjoon/b2470), 
+
+[NN단표](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/Algorithms/python/algorithmjobs/L10/L10_07NNtable.py) 
+
+bfs-dfs 
+
+수도배관
+
+단지 번호 붙이기
+
+목수의 미로탈출
 
 dp => makenum,sum_rectangular, 연속부분의 최대합 DP로
 
