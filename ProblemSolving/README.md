@@ -42,7 +42,7 @@
 *시간상 주로 머릿속으로만 하고, ps2.2에서 모듈 간 연결관계를 '대략적으로' 명시화하는 것이 일반적
 
 ## ps2 : utilizations and Integrations of computer algorithms for Comprehension
-['(해석에) 컴퓨터 알고리즘 활용 및 통합' 관련 경험들](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS_major_experience/ps2.md)
+['(해석에) 컴퓨터 알고리즘 활용 및 통합' 관련 경험들](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/ProblemSolving/PS_major_experience/ps2.md)
 
 내가 생각하는 컴퓨터 알고리즘이란, '프로그래밍 언어로 구현가능한'된 자료구조, bfs같은 알고리즘, 그리고 주어진 상황 맞춤형 알고리즘 모두를 포함
 
@@ -68,7 +68,7 @@
 하지만 문제의 상황별로 히든히든케이스는 숨는 방법이 무한가지인듯함...일단 위 기본방법들은 시도하되,중요한 것은 시간관리이므로 빠르게 다음문제로 넘어간다.
 
 ## ps3 : implemetation
-['구현' 관련 경험들](https://github.com/devsacti/Algorithms_Query/blob/main/PSrecords_python/PS_major_experience/ps3.md)
+['구현' 관련 경험들](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/ProblemSolving/PS_major_experience/ps3.md)
 
 정리된 모듈들은 라이브러리 등을 바탕으로 코드로 구현
 
@@ -76,4 +76,4 @@
 
 
 ## major PS practice
-[PS-WarmUp](https://github.com/devsacti/Algorithms_Query/tree/main/PSrecords_python/PS-WarmUp)
+[PS-WarmUp](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp)
