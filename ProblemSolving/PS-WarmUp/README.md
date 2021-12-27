@@ -31,7 +31,7 @@ dijstra(feat. heap) => 최단거리, 플로이드, 크루스칼
 # ps3-oriented practice or record
 ## ps
 
--[숫자피라미드](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/Algorithms/python/algorithmjobs/L2/%EC%88%AB%EC%9E%90%ED%94%BC%EB%9D%BC%EB%AF%B8%EB%93%9C.py)
+-[숫자피라미드](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/Algorithms/python/algorithmjobs/L2/)
 
 -[class president](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/Algorithms/python/algorithmjobs/L3/L3_12classpriesident.py)
 
