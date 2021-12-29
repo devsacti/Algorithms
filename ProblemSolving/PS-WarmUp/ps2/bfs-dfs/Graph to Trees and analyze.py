@@ -1,123 +1,158 @@
-# summary of ps
+'''
+ps1. comprehension about problem
+ps1.1 analysis
+leaf 부터 inner node들을 거쳐 root node까지 이어지는 형태
+leaf를 가진 부모노드의 weight는 그들 자식들의 weight의 합으로 정의
+root node의 넘버는 1
 
-# ps
-## Accurate comprehension
-# 마지막 지점의 번호는 항상 1이다. 즉, 루트노드의 번호는 1이다
-# 이런 조건이 없었다면, reversed_tree를 dfs로 해서 부모노드가 없을때까지 탐색
+주어진 물의 양이 트리에서 종합된 weight으로 나눠질때, leaf에 할당되는 양을 산출
+단, 나눠지지 않으면 -1
 
-# 두 지점이 서로 연결되어있다는 의미 >> 부모자식이랑 별개의 무방향 간선 정보로서 층위와 무관하게 줘서 별도 처리 필요
-## 우선 인풋값 받을 당시엔 무엇이 부모인지 알수없어, 양방향으로 연결하되,
-## 1번이 루트라는 조건에 따라 1번부터 살펴보고, 부모로의 방향은 끊으면 된다.
+ps1.2 drawing pattern ~ exceptions
+child node의 weight를 1로 간주하여, parent node로 전파
 
-# 한번의 순회를 통해 inner와 leaf를 도출하고, 첫방문노드에 1을 기준으로 부모와 자식 노드들의 할당비를
-# 구할 수 없을까 고민했지만, 유리수의 문제가 너무 컸다. 즉, leaf에 할당비를 1로 두고 해야 오차가 없다.
+ps2. utilizing and integration of computer algorithms
+ps2.1. utilizing
+module1 : from Vertex,edge,which is not directed, to graph to tree
+module2 : finding leaf
+module3 : propagate the weight of leaf to parent and sum the weight
+module4 : estimate whether given water is divided by sum of weight
 
-## utils-integ algo
-# root, inner, leaf로 노드 구분 - bfs
+ps2.1. integration
+module 1,2,3,4
 
-# leaf를 기준으로, 역트리를 활용해서, 노드별 할당비 도출 및 할당 - dfs
-
-## 당연히 bfs 대신 dfs, dfs 대신 bfs도 가능, 추후 연습
-
-
-## implement
-# 트리에서 간선의 갯수는 노드 수 -1
-# 일반적인 dfs 순회의 경우 visited가 필요한데, 여기선 중복방문이라 변형필요
-# visited 대신 부모노드 존재여부로 전환하는데, for의 if특성과 defaultdict로 해결
-# tree가 아닌 그래프였고, 나아가, root부터 인풋하지 않았기에 재구조화 필요
+ps3. Impl
+'''
 from collections import defaultdict
 from collections import deque
 
-
-# dfs for finding leaf of tree
-def is_leaf(tree, v, visited, leafs, weights):
-    if (len(tree[v]) == 0):
-        leafs.append(v)
-        weights[v] = 1
-
-    for adj in tree[v]:
-        if (visited[adj] == 0):
-            is_leaf(tree, adj, visited, leafs, weights)
-
-
-# directed edge, so visited don't needed
-def dfs(reverse, v, weights):
-    for adj in reverse[v]:
-        weights[adj] += 1
-        dfs(reverse, adj, weights)
-
-
-# bfs for making tree from graph
-def make_tree(graph, s, visited, tree, reversed_tree):
-    visited[s] = 1
-    q = deque()
-    q.append(s)
-
-    while q:
-        now = q.popleft()
-
-        # 양방향 그래프라 여기는 안됨
-        # tree[now].extend(graph[now])
-
+# sub of module 1 by bfs, making trees from graph
+def make_tree(graph,visited,s):
+    # tmp for return
+    tmp_tree=defaultdict(list)
+    tmp_reversed_tree=defaultdict(list)
+    
+    visited[s]=1
+    q=deque();q.append(s)
+    
+    while(q):
+        now=q.popleft()
+      
         for adj in graph[now]:
-            if (visited[adj] == 0):
-                # 현재 기준 방문안한 애들이 자식임
-                tree[now].append(adj)
-                visited[adj] = 1
+            if(visited[adj]==0):
+                tmp_tree[now].append(adj)
+                visited[adj]=1
                 q.append(adj)
             else:
-                reversed_tree[now].append(adj)
+                tmp_reversed_tree[now].append(adj)
+          
+    return tmp_tree,tmp_reversed_tree
+    
+# module 2 graph dfs 순회를 통해서도 leaf를 찾을 수 있고, 큰 차이없으나 일단 트리
+def find_leaf(tree, visited,now,leafs):
+      # 방문처리
+      visited[now]=1
 
-    return tree, reversed_tree
+      # 현 노드 방문처리 후, 전체를 다 돌았나 평가해야한다. 이걸 먼저 실행하면, 최종노드 방문 후 leaf node 평가가 안될 수 있다.
+      # 전체 노드 방문 여부에 대해선, 방문 시 1이 할당되므로 visited의 총합으로 평가가능(0번노드의 값은 0이기도 하고)
+      # 인덱싱을 1부터하기 위해 0번째를 붙였으므로, n 은 len(visited)-1로 표현가능
+      # print(now, tree[now], visited)
+      # if(sum(visited)==len(visited)-1):
+      #     print('ck')
+      #     return leafs
+      # => 전체 노드를 다 돌면 자동으로 더이상 dfs가 call되지 않는다, 즉 이미 dfs는 전체 노드를 방문하는 순간 정지된다.
+      # 별도의 if문 불필요, 구조상
+      
+      # leaf node인지 평가
+      if(len(tree[now])==0 ):
+          leafs.append(now)
+
+      # 현재 노드 주변 탐색 recursive of dfs
+      for adj in tree[now]:
+          if(visited[adj]==0):
+              leafs=find_leaf(tree, visited,adj,leafs)
+              
+      return leafs
+      
+# module 3 ; bfs based on reversed_tree
+# tree 특성상 visited 불필요하나, 상기를 위해 기입
+def propagatation_leaf(reversed_tree,s,visited,weights):
+    visited[s]=1
+    q=deque();q.append(s)
+    
+    while(q):
+        now=q.popleft()
+        
+        for adj in reversed_tree[now]:
+            if(visited[adj]==0):
+                weights[adj]+=1
+                
+                visited[adj]=1
+                q.append(adj)
+    
+    return weights
+
+# module 4 ; estimate valid distribute or not, and if possible share
+def estimate(water, sum_weight):
+    if(water%sum_weight==0):
+        return water//sum_weight
+    else:
+        return -1
 
 
-if __name__ == "__main__":
-    n, b = map(int, input().split())
-
-    graph = defaultdict(list)
-
-    # 간선 정보다 층위와 별개라 v1,v2로 정정
-    for _ in range(n - 1):
-        v1, v2 = map(int, input().split())
-        # 무방향 그래프로 우선 선언
+if __name__=="__main__":
+    # module 1
+    n,water = map(int,input().split())
+    
+    # making graph
+    graph=defaultdict(list)
+    for _ in range(n-1):
+        v1,v2=map(int,input().split())
+      
+        # because given edge has no direction information, make undirected graph
         graph[v1].append(v2)
         graph[v2].append(v1)
+      
+    key_graph=sorted(list(graph))
+    
+    # for key in key_graph:
+    #     print(key,' ',graph[key])
+    
+    # making trees from graph
+    tree=defaultdict(list)
+    reversed_tree=defaultdict(list)
+    idx_root=1
+    visited=[0]+[0 for _ in range(n)]
+    
+    tree,reversed_tree=make_tree(graph,visited,idx_root)
+    
+    # print('#')
+    # for idx in range(1,n+1):
+    #     print(idx,' ',tree[idx])
+    
+    # print('#')
+    # for idx in range(1,n+1):
+    #     print(idx,' ',reversed_tree[idx])
 
-    keys = sorted(list(graph))
-
-    # for k in keys:
-    #   print(k,':',graph[k])
-
-    tree = defaultdict(list)
-    reversed_tree = defaultdict(list)
-
-    visited = ['*'] + [0 for _ in range(n)]
-
-    tree, reversed_tree = make_tree(graph, 1, visited, tree, reversed_tree)
-
-    # print(tree)
-    # print(reversed_tree)
-
-    # tree와 reversed_tree의 관계를 이용해서 아래를 찾을 수도 있는데 O(n^2)라 지양
-    leaf_nodes = []
-    visited = ['*'] + [0 for _ in range(n)]
-    weights = [0] + [0 for _ in range(n)]
-
-    is_leaf(tree, 1, visited, leaf_nodes, weights)
-
-    # print(leaf_nodes)
+  
+    # module 2
+    visited=[0]+[0 for _ in range(n)]
+    now=1
+    leafs=[]
+    leafs=find_leaf(tree, visited,now,leafs)
+    # print(leafs)
+    
+    # module 3
+    weights=[0]+[0 for _ in range(n)]
+    
+    for leaf in leafs:
+        weights[leaf]=1
+        # print('leaf',weights)
+        visited=[0]+[0 for _ in range(n)]
+        weights=propagatation_leaf(reversed_tree,leaf,visited,weights)
     # print(weights)
-
-    # 도출된 leaf들마다 dfs
-    for leaf in leaf_nodes:
-        dfs(reversed_tree, leaf, weights)
-
-    # print(weights)
-
-    div = sum(weights)
-    # print(div)
-
-    if (b % div == 0):
-        print(b // div)
-    else:
-        print(-1)
+    
+    # module 4
+    answer=estimate(water, sum(weights))
+    
+    print(answer)

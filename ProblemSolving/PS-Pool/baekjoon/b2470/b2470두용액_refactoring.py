@@ -15,9 +15,6 @@ def bs(sorted_seq,n,std):
     # index of left-right pointer : s-e
     s=0
     e=(n-1)
-
-    idx_left_pointer=0
-    idx_right_pointer=(n-1)
     
     # s+0<=e 조건을 반복하다 정지 직전 상황에서는, 추출 구간의 길이가 1이되고, 정지 후에는 e-s의 값이 -1이 된다고 할수있다.
     # s+1<=e 조건을 반복하다 정지 직전 상황에서는, 추출 구간의 길이가 2이되고, 정지 후에는 e-s의 값이 0이 된다고 할수있다.

@@ -9,7 +9,7 @@ def bs(start, root_end,k):
     s=start
     e=root_end*root_end
 
-    while(e-s>=0):
+    while(s<=e):
         # print('start~end',s,e)
         mid=int( (s+e)/2 )
         # print('#mid',mid)
