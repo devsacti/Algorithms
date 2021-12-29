@@ -1,3 +1,5 @@
+# not complete yet
+
 # ps1. accurate comprehension
 # ps1.1. analysis
 # n*n인 체스판에 서로 공격불가하게 n개의 퀸을 배치하는 경우의 수
