@@ -48,7 +48,9 @@ dijstra(feat. heap) => 최단거리, 플로이드, 크루스칼
 
 
 
-## [effective and useful implementation records](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/PSrecords_python/PS-WarmUp/UsefulImplRecords)
+## effective and useful implementation records
+[goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/UsefulImplRecords)
+
 ### handlingMatrix
 
 ### how to describe the vector in 2d
