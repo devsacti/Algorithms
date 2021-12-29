@@ -30,10 +30,10 @@ bfs-dfs
 목수의 미로탈출
 
 ##
-dp => makenum,sum_rectangular, 연속부분의 최대합 DP로
+dijstra(feat. heap) => 최단거리, 플로이드, 크루스칼
 
 ##
-dijstra(feat. heap) => 최단거리, 플로이드, 크루스칼
+dp => makenum,sum_rectangular, 연속부분의 최대합 DP로
 
 # ps3-oriented practice or record
 ## ps
