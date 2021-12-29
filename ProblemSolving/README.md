@@ -78,3 +78,5 @@
 
 ## major PS practice
 [PS-WarmUp](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp)
+
+[PS-Pool](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-Pool)
