@@ -72,7 +72,7 @@ bingo => 2차원에 대한 가로,세로,대각선 접근방식 구현
 nqueen => 백트래킹 구현(단, 패턴 도출단계도 매우 어렵다고 평가)
 
 
-## effective and useful implementation records [goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/UsefulImplRecords)
+## effective and useful implementation records [goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/Useful_Impl_Records)
 
 handlingMatrix
 
