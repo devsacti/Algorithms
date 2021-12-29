@@ -26,7 +26,7 @@ Error : 2개 이상 시 체크 != 2개가 되면 체크
 
 Solution : 우선 print로 중간체크하는 습관, 그리고 많이 풀기
 
-##
+##### explain
 
 L10_08, cnt가 2개 이상이면 체크 => 2개가 되면 1번 체크해야되는데 2개가 된 케이스가 3개 4개가 될때마다 과다 체크
 
@@ -66,7 +66,7 @@ for element in ~:
     if(element>=2)꼴도 맞긴하다.
 
 #### Error and Solution 2 
-Error : (i+1)%10 != (i%10)+1 
+Error : (i+1)%10 는 (i%10)+1 와 다른데, 착오!
 
 Solution : 우선 print로 중간체크하는 습관, 그리고 많이 풀기
 
