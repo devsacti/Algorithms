@@ -8,5 +8,3 @@ ProblemSolving : problems that is analyzed and simulated by algorithm methods
 
 ## requirements
 vscode
-
-mysql workbench or hackerrank sign up
