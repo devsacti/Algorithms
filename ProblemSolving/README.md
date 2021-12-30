@@ -24,15 +24,15 @@
 #### 참고사항
 여집합, 역순 우선, 벤다이어그램도 필수
 
-### ps1.2 drawing pattern,formulation for making modules and based on this, finding exceptions
-패턴 찾기와 예외처리, 그리고 공식만들기
+### ps1.2 drawing pattern, exceptions
+패턴 찾기, 그리고 예외처리
 
 ###
--패턴(또는 규칙, 로직 등) 찾기와 공식화 :
+-패턴(또는 규칙, 로직, 공식 등) 찾기 :
 
-예제 상황 및 조건들 간 함축적 관계에서 맞춤 특정 패턴을 도출하거나 관련 이론을 통해 공식화한다. 대표적으로 ideal case를 상정한 접근 및 패턴 도출이 있다.
+예제 상황 및 조건들 간 함축적 관계에서 패턴을 도출하거나 관련 이론을 통해 공식화 또는 모듈화 한다. 대표적으로 ideal case를 상정한 접근 및 패턴 도출이 있다.
 
-그리고 모듈단위로 구조화해서 전체 흐름을 그린다. 모듈들을 간단한 도식이나 공식으로 표현하기(그러나 컴퓨터로직화까진 not yet)
+그리고 하위 모듈들로 종합구조화해서 전체 흐름을 그린다. 모듈들을 간단한 도식이나 공식으로 표현하기(그러나 컴퓨터로직화까진 not yet)
 
 *시간상 주로 머릿속으로만 하고, ps2.2에서 모듈 간 연결관계를 '대략적으로' 명시화하는 것이 일반적
 
@@ -42,7 +42,7 @@
 *개인적으로 이 부분은 많은 경험이 쌓여야 능력이 성장하는 듯하다.
 
 
-## ps2 : utilizations and Integrations of computer algorithms for Comprehension
+## ps2 : Applying computer algorithms to Comprehension
 ['(해석에) 컴퓨터 알고리즘 활용 및 통합' 관련 경험들](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/ProblemSolving/PS_major_experience/ps2.md)
 
 내가 생각하는 컴퓨터 알고리즘이란, '프로그래밍 언어로 구현가능한'된 자료구조, bfs같은 알고리즘, 그리고 주어진 상황 맞춤형 알고리즘 모두를 포함
@@ -67,6 +67,7 @@
 이론적으론 별개의 개인적인 테케 추가 통해서 검증 => 홀수 대신 짝수 개, 주어진 범위의 양극단 값 like 0,1개, 음수와 양수 등
 
 하지만 문제의 상황별로 히든히든케이스는 숨는 방법이 무한가지인듯함...일단 위 기본방법들은 시도하되,중요한 것은 시간관리이므로 빠르게 다음문제로 넘어간다.
+*시간상, 생략 가능
 
 ## ps3 : implemetation
 ['구현' 관련 경험들](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/ProblemSolving/PS_major_experience/ps3.md)
