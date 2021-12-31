@@ -67,6 +67,8 @@ baseballgame => 문제 해석에 따른 다중 for 문 구현
 
 bingo => 2차원에 대한 가로,세로,대각선 접근방식 구현
 
+recursive_bruteforce => 재귀구조 구현과 활용(product,combinations, permutaions,dfs, 탐색 + python의 강점)
+
 nqueen => 백트래킹 구현(단, 패턴 도출단계도 매우 어렵다고 평가)
 
 
@@ -76,8 +78,4 @@ handlingMatrix
 
 how to describe the vector in 2d
 
-implement of bruteforce
-
-recursivebruteforce
-+ bfsbruteforce(comming soon!)
 
