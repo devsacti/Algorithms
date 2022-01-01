@@ -17,6 +17,7 @@ streetree => 수학적 지식으로 패턴 도출하기
 (주석 정리는 아직)
 
 # ps2-oriented practice or record [goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps2)
+
 ## sorting and binarysearch 
 
 랜선 자르기 => 정렬 후 이진탐색 속 start,e의 역할
@@ -57,6 +58,11 @@ sum_rectangular
 연속부분의 최대합 DP
 (주석 정리는 아직)
 
+## further extensions
+
+nqueen => 백트래킹 구현(단, 패턴 도출단계도 매우 어렵다고 평가)
+
+
 # ps3-oriented practice or record [goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps3)
 
 숫자피라미드 => 주어진 정보에 적합한 자료구조 구현
@@ -67,10 +73,7 @@ baseballgame => 문제 해석에 따른 다중 for 문 구현
 
 bingo => 2차원에 대한 가로,세로,대각선 접근방식 구현
 
-recursive_bruteforce => 재귀구조 구현과 활용(product,combinations, permutaions,dfs, 탐색 + python의 강점)
-
-nqueen => 백트래킹 구현(단, 패턴 도출단계도 매우 어렵다고 평가)
-
+recursive_series => 재귀구조 구현과 활용(factorial,product,combinations, permutaions,dfs, 탐색 + python의 강점)
 
 ## effective and useful implementation records [goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/Useful_Impl_Records)
 
