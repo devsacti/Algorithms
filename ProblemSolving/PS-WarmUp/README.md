@@ -22,7 +22,7 @@ from computer algorithms to comprehension of problem
 ## recursive extensions
 
 재귀구조 구현과 활용,그리고 백트래킹
-=> recursive_series(product, permutaions,combinations,factorial,N-queens, dfs 활용)
+=> recursive_series(product, permutaions,combinations,factorial), N-queens, 웜 바이러스(dfs)
 
 ## sorting and binarysearch 
 
@@ -36,21 +36,25 @@ from computer algorithms to comprehension of problem
 => NN단표(주석 정리는 아직)
 
 ## bfs-dfs
+* 정석적인 stack 기반 dfs는 'Graph to Trees and analyze'에서 정리 후, recursive 방식으로 적용하기
 
 Vertex와 edge가 주어졌을때, 그래프나 트리 구현 그리고 분석
 => Graph to Trees and analyze
-
-인접리스트로 구체화되지 않은 그래프에 대해 bfs-dfs 적용하기(혹은 2차원 매트릭스를 그래프로 간주하고 분석하기, 참고로 bfs 순회과정에서 그래프로 도출도 가능하나 코테에 부적합) 
-=>단지 번호 붙이기, 목수의 미로탈출
 (주석 정리는 아직)
 
-## dijstra
+인접리스트로 구체화되지 않은 그래프에 대해 bfs-dfs 적용하기(혹은 2차원 매트릭스를 그래프로 간주하고 분석하기, 참고로 bfs 순회과정에서 그래프로 도출도 가능하나 코테에 부적합) 
+=> 단지 번호 붙이기, 목수의 미로탈출
+(주석 정리는 아직)
+
+## dijstra and floyd warshall
 dijstra(feat. heap)
 => 최단거리(주석 정리는 아직)
 
 +a 플로이드(주석 정리는 아직)
 
-+a 크루스칼(주석 정리는 아직)
+## kruscal
+크루스칼
+=> (주석 정리는 아직)
 
 ## dp
 makenum

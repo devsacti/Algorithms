@@ -70,7 +70,7 @@ if __name__=="__main__":
     # applying product of itertools
     # 만약 백트래킹 요건이 없이 bruteforce한 문제가 나온 경우, 요긴하다만
     # 대체로 백트래킹 조건이 1개라도 존재하면 무용지물이 되서 활용도가 낮다.
-    # 그렇기에 recursive 구조의 custom product를 학습한다.
+    # 그렇기에 recursive 구조의 custom product도 학습한다.
     results=list(product(samplespace,repeat=r))
     # print(results)
 
