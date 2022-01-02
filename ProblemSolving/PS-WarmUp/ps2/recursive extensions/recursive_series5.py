@@ -11,17 +11,21 @@ factorial custom
 ps2. applying computer algorithms to problem
 ps2.1. utilizations
 
-backtracking
+recursive and backtracking
 
 ps2.2. integrations
 
 ps3. Impl
 '''
 
-# control of recursive ; estimate success or not success => 1 or not 1, if not 1, then check promising not promising (0 or -1)
+# control of recursive ; estimate promising or not => 0 or -1, if promising, then check fit or not (0 or 1)
 def ctrl_recursive(depth,limit,result):
     global samplespace, results
     
+    if(limit==1):
+        print(1)
+        return -1
+
     promising=False
     if(depth<=1):
         promising=True
@@ -75,9 +79,6 @@ if __name__=="__main__":
     
     recursive_factorial(depth,limit,result)
     # print(results)
-    
-    if(n==1):
-        print(1)
     
     for result in results:
         answer=1
