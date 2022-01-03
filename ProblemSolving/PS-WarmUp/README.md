@@ -19,14 +19,9 @@ streetree !! 수학적 지식으로 패턴 도출하기
 # ps2-oriented practice or record [goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps2)
 from computer algorithms to comprehension of problem
 
-## recursive extensions
-
-재귀구조 구현과 활용,그리고 백트래킹
-=> recursive_series(product, permutaions,combinations,factorial), N-queens, 웜 바이러스(dfs)
-
 ## sorting and binarysearch 
 
-정렬 후 이진탐색 속 start,e의 역할
+정렬 후 이진탐색 속 start,end의 역할
 => 랜선자르기(주석 정리는 아직)
 
 정렬 후 이진탐색 속 while 속 조건식과 s,e(two pointer) 관계, 그리고 '언제 break하지?'
@@ -35,16 +30,25 @@ from computer algorithms to comprehension of problem
 정렬 후 이진탐색 속 if의 커스텀과 break의 역할
 => NN단표(주석 정리는 아직)
 
-## bfs-dfs
+## recursive extensions
+
+재귀구조와 백트래킹
+=> bruteforce ; recursive_series(product, permutaions,combinations,factorial), N-queens
+
+## dfs-bfs
 * 정석적인 stack 기반 dfs는 'Graph to Trees and analyze'에서 정리 후, recursive 방식으로 적용하기
 
-Vertex와 edge가 주어졌을때, 그래프나 트리 구현 그리고 분석
-=> Graph to Trees and analyze
-(주석 정리는 아직)
+dfs-bfs
+=> 바이러스(dfs),DFS와 BFS
 
-인접리스트로 구체화되지 않은 그래프에 대해 bfs-dfs 적용하기(혹은 2차원 매트릭스를 그래프로 간주하고 분석하기, 참고로 bfs 순회과정에서 그래프로 도출도 가능하나 코테에 부적합) 
-=> 단지 번호 붙이기, 목수의 미로탈출
+dfs-bfs를 활용한 그래프 속 트리 도출 그리고 분석
+=> Graph to Trees and analyze
+
+인접리스트로 구체화되지 않은 그래프에 대해 bfs-dfs 적용하기(혹은 2차원 매트릭스를 그래프로 간주하고 분석하기) 
+=> 단지 번호 붙이기(dfs 다음 bfs), 벽 부수고 이동하기(bfs 다음 dfs)
 (주석 정리는 아직)
+* 결과는 같더라도, 문맥상 dfs가 더 적절한 경우와 bfs가 더 적절한 경우가 존재한다고 생각, 특히 최단거리는 bfs쪽이 와닿음
+*참고로 dfs-bfs 순회과정에서 '2d matrix to graph'로 자료구조화가 가능하나 코테에 부적합
 
 ## dijstra and floyd warshall
 dijstra(feat. heap)
