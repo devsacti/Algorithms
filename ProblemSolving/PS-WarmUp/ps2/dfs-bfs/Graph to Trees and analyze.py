@@ -15,6 +15,9 @@ ps2. utilizing and integration of computer algorithms
 ps2.1. utilizing
 module1 : from Vertex,edge,which is not directed, to graph to tree
 module2 : finding leaf
+
+!! 
+
 module3 : propagate the weight of leaf to parent and sum the weight
 module4 : estimate whether given water is divided by sum of weight
 

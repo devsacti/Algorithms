@@ -36,10 +36,11 @@ from computer algorithms to comprehension of problem
 => bruteforce ; recursive_series(product, permutaions,combinations,factorial), N-queens
 
 ## dfs-bfs
-* 정석적인 stack 기반 dfs는 'Graph to Trees and analyze'에서 정리 후, recursive 방식으로 적용하기
 
 dfs-bfs
-=> 바이러스(dfs),DFS와 BFS
+=> 바이러스(dfs),DFS와 BFS 
+
++ 'dfs based on stack VS dfs based on recursive(본질은 같다!)'
 
 dfs-bfs를 활용한 그래프 속 트리 도출 그리고 분석
 => Graph to Trees and analyze
@@ -48,7 +49,8 @@ dfs-bfs를 활용한 그래프 속 트리 도출 그리고 분석
 => 단지 번호 붙이기(dfs 다음 bfs), 벽 부수고 이동하기(bfs 다음 dfs)
 (주석 정리는 아직)
 * 결과는 같더라도, 문맥상 dfs가 더 적절한 경우와 bfs가 더 적절한 경우가 존재한다고 생각, 특히 최단거리는 bfs쪽이 와닿음
-*참고로 dfs-bfs 순회과정에서 '2d matrix to graph'로 자료구조화가 가능하나 코테에 부적합
+
+* 참고로 dfs-bfs 순회과정에서 '2d matrix to graph'로 자료구조화가 가능하나 코테에 부적합
 
 ## dijstra and floyd warshall
 dijstra(feat. heap)
