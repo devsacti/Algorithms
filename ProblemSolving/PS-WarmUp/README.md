@@ -29,7 +29,7 @@ from computer algorithms to comprehension of problem
 => 두 용액
 
 정렬 후 이진탐색 속 if의 커스텀과 break의 역할(패턴 도출도 어렵다; 역함수)
-=> NN단표(주석 정리는 아직)
+=> NN단표
 
 ## recursive extensions
 
