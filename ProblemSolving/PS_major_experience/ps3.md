@@ -47,3 +47,8 @@ Solution : 인덱스 범위 재설정 및 기준이 되는 minimum, maxmum, inte
 Error : 재귀구조에서 return을 안한 경우
 
 Solution : 재귀구조 간 스텝에서 return을 통해 최종 결과값까지 원하는 값을 보내도록 한다.
+
+#### Error and Solution 5 : 'limit이 0 또는 1 인 경우에 한하여 액션한다.' 는 if(limit == 0 or 1) 이 아니다!!!
+Error : 수학적 사고를 컴퓨터로 옮길때, 약간의 표현상 오차를 착각
+
+Solution : limit == (0 or 1)

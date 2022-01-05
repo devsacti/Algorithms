@@ -12,7 +12,10 @@ ps1.2. drawing pattern, exception
 dfs,bfs
 
 ps2. applying computer algorithms to comprehension
-ps2.1. utilizations
+ps2.1. utilizing and modularizing
+
+module 1 ; recursive
+
 ps2.2. integrations
 ps2.3. humble approach
 

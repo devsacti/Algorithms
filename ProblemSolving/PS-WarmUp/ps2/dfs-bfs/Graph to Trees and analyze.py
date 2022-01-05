@@ -16,7 +16,7 @@ ps2.1. utilizing
 module1 : from Vertex,edge,which is not directed, to graph to tree
 module2 : finding leaf
 
-!! 
+!! 정형화된 조건에서 dfs는 recursive 기반 bruteforce로 이해가능하다.
 
 module3 : propagate the weight of leaf to parent and sum the weight
 module4 : estimate whether given water is divided by sum of weight

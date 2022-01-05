@@ -30,7 +30,7 @@ def n_queens(i,col):
 
     if(promising(i,col)):
         if(i==n):
-            # print(col[1:n+1])
+            print(col[1:n+1])
             cnt_validcase+=1
         else:
             for j in range(1, n+1):
