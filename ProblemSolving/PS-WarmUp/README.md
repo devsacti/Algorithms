@@ -52,6 +52,8 @@ dfs-bfs를 활용한 그래프 속 트리 도출 그리고 분석
 
 * 참고로 dfs-bfs 순회과정에서 '2d matrix to graph'로 자료구조화가 가능하나 코테에 부적합
 
++a 위상정렬(주석은 아직)
+
 ## dijstra and floyd warshall
 dijstra(feat. heap)
 => 최단거리(주석 정리는 아직)

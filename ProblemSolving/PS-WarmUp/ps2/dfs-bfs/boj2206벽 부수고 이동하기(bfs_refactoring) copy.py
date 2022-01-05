@@ -56,9 +56,6 @@ def bfs(graph, visited, start,matrix_cost):
         else:
             matrix_cost[r_now][c_now]=min(cost_now,matrix_cost[r_now][c_now])
 
-        # get valid adjs
-        adjs=[]
-
         for dir in range(len(dr)):
             r_adj=r_now+dr[dir]
             c_adj=c_now+dc[dir]
