@@ -58,10 +58,6 @@ dijstra(feat. heap)
 
 +a 플로이드(주석 정리는 아직)
 
-## kruscal
-크루스칼
-=> (주석 정리는 아직)
-
 ## dp
 makenum
 (주석 정리는 아직)
