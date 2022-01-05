@@ -1,5 +1,5 @@
 '''
-link : https://www.acmicpc.net/problem/2206
+reference : https://www.acmicpc.net/problem/2206
 
 ps1. comprehension of problem
 ps1.1. analysis

@@ -1,4 +1,5 @@
 # Problem Solving WarmUp to remind key points
+* 개인적으로 실제 코테에서는 3 1 2 again 3의 순환을 거치므로, 이와같은 순서를 우선하기 희망
 
 # ps1-oriented practice or record [goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps1)
 ##
@@ -22,12 +23,12 @@ from computer algorithms to comprehension of problem
 ## sorting and binarysearch 
 
 정렬 후 이진탐색 속 start,end의 역할
-=> 랜선자르기(주석 정리는 아직)
+=> 랜선자르기
 
 정렬 후 이진탐색 속 while 속 조건식과 s,e(two pointer) 관계, 그리고 '언제 break하지?'
-=> 두 용액(주석 정리는 아직)
+=> 두 용액
 
-정렬 후 이진탐색 속 if의 커스텀과 break의 역할
+정렬 후 이진탐색 속 if의 커스텀과 break의 역할(패턴 도출도 어렵다; 역함수)
 => NN단표(주석 정리는 아직)
 
 ## recursive extensions
@@ -35,7 +36,7 @@ from computer algorithms to comprehension of problem
 재귀구조와 백트래킹
 => bruteforce ; recursive_series(product, permutaions,combinations,factorial), N-queens
 
-## dfs-bfs
+## Depth First Search - Breadth First Search
 
 dfs-bfs
 => 바이러스(dfs),DFS와 BFS 
@@ -59,7 +60,7 @@ dijstra(feat. heap)
 
 +a 플로이드(주석 정리는 아직)
 
-## dp
+## dynamic programming
 makenum
 (주석 정리는 아직)
 

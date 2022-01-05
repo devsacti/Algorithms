@@ -1,21 +1,24 @@
-# ps1. accurate comprehension
-# ps1.1. analysis
-# 1. 선이 3개 이상일 때 빙고
+'''
+reference : https://www.acmicpc.net/problem/2578
 
-# ps1.2. drawing pattern, exception
-# 5번 체크 이상 부터 가로, 세로, 대각선 빙고여부를 체크
+ps1. accurate comprehension
+ps1.1. analysis
+1. 선이 3개 이상일 때 빙고
+
+ps1.2. drawing pattern, exception
+5번 체크 이상 부터 가로, 세로, 대각선 빙고여부를 체크
 
 
-# ps2. utilizations and integrations of computer algorithms
-# ps2.1. Util
-# 모듈1 체크는 빙고판에서 목표 숫자의 row,col 확인 후 별도의 빙고체크 매트릭스에 체크
-# 모듈2 빙고체크 매트릭스에 대한 가로, 세로, 대각선 체크
+ps2. utilizations and integrations of computer algorithms
+ps2.1. Util
+모듈1 체크는 빙고판에서 목표 숫자의 row,col 확인 후 별도의 빙고체크 매트릭스에 체크
+모듈2 빙고체크 매트릭스에 대한 가로, 세로, 대각선 체크
 
-# ps2.2. Integ
-# 모듈1 => 모듈2
+ps2.2. Integ
+모듈1 => 모듈2
 
-# ps3. Impl
-
+ps3. Impl
+'''
 # check bingoMatrix by checkMatrix
 def checkbingo(cur_num,bingoMatrix,bingocheckMatrix):
 

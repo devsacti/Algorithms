@@ -1,21 +1,26 @@
-# accurate comprehension
-## ps1.1.analysis
-## 356 1 0 => 1 strike, 1 ball
-## ...
-## possible => 324, 328 => 2 cases
+'''
+reference : https://www.acmicpc.net/problem/2503
 
-## ps1.2.drawing pattern,exception
-## filtering pattern based on tried score by challenger
+accurate comprehension
+ps1.1.analysis
+356 1 0 => 1 strike, 1 ball
+...
+possible => 324, 328 => 2 cases
 
-# utilizations and integrations of algorithms
-## ps2.1.utilization
-## itertools.permutations for making cases
-## module 1 : double for ; 1st case of allcases => 2nd filter of filter_val
+ps1.2.drawing pattern,exception
+filtering pattern based on tried score by challenger
 
-## ps2.2.integration
-## module 1
+utilizations and integrations of algorithms
+ps2.1.utilization
+itertools.permutations for making cases
+module 1 : double for ; 1st case of allcases => 2nd filter of filter_val
 
-# Impl
+ps2.2.integration
+module 1
+
+Impl
+'''
+
 from itertools import permutations
 
 if __name__=='__main__':

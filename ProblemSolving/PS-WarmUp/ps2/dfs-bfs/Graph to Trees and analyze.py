@@ -1,4 +1,6 @@
 '''
+reference : ?
+
 ps1. comprehension about problem
 ps1.1 analysis
 leaf 부터 inner node들을 거쳐 root node까지 이어지는 형태

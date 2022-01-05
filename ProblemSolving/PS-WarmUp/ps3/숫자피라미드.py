@@ -1,22 +1,27 @@
-# accurate comprehension
-## ps1.1
-## pyramid pattern
-## numbering ; 1 ~, and odd index of row ; right to left, even index of row ; left to right
-## '10 becomes 1' 
+'''
+reference : 알고리즘잡스 L2,
+sub reference(unstable) : https://haejun0317.tistory.com/13
 
-## ps1.2
+accurate comprehension
+ps1.1
+pyramid pattern
+numbering ; 1 ~, and odd index of row ; right to left, even index of row ; left to right
+'10 becomes 1' 
 
-# utilizations and integrations of algorithms
-## ps2.1
-## Module 1.1 : pyramid pattern => 1,3,5,7,... pieces from sample ; total cnt is n*n
-## Module 1.2 : '10 becomes 1' => samplespace 1~9
-## Module 2 : index of row => if idx%2==1
+ps1.2
 
-## ps2.2
-## Module 1.2 => Module 1.1 => Moudle 2
+utilizations and integrations of algorithms
+ps2.1
+Module 1.1 : pyramid pattern => 1,3,5,7,... pieces from sample ; total cnt is n*n
+Module 1.2 : '10 becomes 1' => samplespace 1~9
+Module 2 : index of row => if idx%2==1
 
-# Impl
+ps2.2
+Module 1.2 => Module 1.1 => Moudle 2
 
+Impl
+
+'''
 if __name__=="__main__":
     n,s = map(int, input().split())
   

@@ -1,14 +1,36 @@
-# 랜선 자르기
+'''
+reference : https://www.acmicpc.net/problem/1654
 
-# ? 왜 e를 max로 잡아야하지, 자른다고 한다면, 최소한 자기자신보다 긴 걸로는 못자르고,
-# 최소길이의 랜선이 최대값이 될것같은데....
-# => 길이가 제각각인 랜선이 5개이고, 길이가 동일한 요구랜선이 5개이다.
-# !! 무엇보다 각각의 랜선을 10000, 1,1,1,1 이라고 가정할때, 제일길게 요구랜선5개를 만들 방법이 뭘까?
-# 10000을 2000,2000,2000,2000,2000으로 짤라서 제출하는 경우이다.
+ps1. comprehension for problem
+ps1.1. analysis
 
-# 주어진 랜선 갯수 <= 요구랜선 이라는 조건에서 나는 무의식적으로,
-# 모든 랜선을 한번은 짤라야 5개에서 최소 5개 그리고 6,7 개 나온다라고 생각했는데,
-# 꼭 모든 랜선을 손댈필요가 없었다!
+K는 1이상 10,000이하의 정수이고, N은 1이상 1,000,000이하의 정수이다. 그리고 항상 K ≦ N 이다.
+=> binary search
+
+ps1.2. drawing pattern, exceptions
+
+pattern1. 주어진 랜선 들 중 가장 작은 길이를 end로 설정해서 이진탐색 
+=> !! exceptions
+주어진 랜선 갯수 <= 요구랜선 이라는 조건에서 나는 무의식적으로,
+모든 랜선을 한번은 짤라야 5개에서 최소 5개 그리고 6,7 개 나온다라고 생각했는데,
+그러나 모든 랜선을 손댈필요가 없었다!
+
+가령,
+길이가 제각각인 랜선이 5개_10000, 1,1,1,1_이고, 길이가 동일한 요구랜선이 5개이라고 할때,
+제일길게 요구랜선5개를 만들 방법이 뭘까?
+10000을 2000,2000,2000,2000,2000으로 짤라서 제출하는 경우이다.
+즉, 1에는 손을 안대도 된다.
+
+ps2. applying computer algorithms to comprehension
+ps2.1. utilizing and modularizing computer algorithms
+
+module 1 ; binary search
+start is 1, end is max length of given lan lines
+
+ps2.2. integration
+
+ps3. Impl
+'''
 
 if __name__=="__main__":
     k,n = map(int, input().split())
@@ -17,7 +39,8 @@ if __name__=="__main__":
     for _ in range(k):
         cand=int(input())
         nums.append(cand)
-        
+    
+    # module 1 ; binary search
     s=1
     e=max(nums)
     
