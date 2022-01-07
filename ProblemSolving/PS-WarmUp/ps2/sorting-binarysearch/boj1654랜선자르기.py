@@ -32,17 +32,10 @@ ps2.2. integration
 ps3. Impl
 '''
 
-if __name__=="__main__":
-    k,n = map(int, input().split())
-    
-    nums=[]
-    for _ in range(k):
-        cand=int(input())
-        nums.append(cand)
-    
+def bs(start,end,nums):
     # module 1 ; binary search
-    s=1
-    e=max(nums)
+    s=start
+    e=end
     
     while(s<=e):
         mid=(s+e)//2
@@ -58,3 +51,16 @@ if __name__=="__main__":
             e=mid-1
             
     print(e)
+    print(max_len)
+
+if __name__=="__main__":
+    k,n = map(int, input().split())
+    
+    nums=[]
+    for _ in range(k):
+        cand=int(input())
+        nums.append(cand)
+    s=1
+    e=max(nums)
+    
+    bs(s,e,nums)

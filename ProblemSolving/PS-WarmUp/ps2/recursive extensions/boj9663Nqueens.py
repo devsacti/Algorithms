@@ -28,7 +28,7 @@ ps3. Impl
 #     return flag
 
 # control point of recursive fork
-def ctrl_recursive(depth, limit, result):
+def promising(depth, limit, result):
     global samplespace,results
     # print('# at ctrl',depth, limit, result)
     # ck promising
@@ -61,7 +61,7 @@ def recursive(depth, limit, result):
     global samplespace,results
     # print('start',depth, limit, result)
 
-    token_ctrl=ctrl_recursive(depth, limit, result)
+    token_ctrl=promising(depth, limit, result)
     # print('token ',token_ctrl)
     # print()
     if(token_ctrl == 1):

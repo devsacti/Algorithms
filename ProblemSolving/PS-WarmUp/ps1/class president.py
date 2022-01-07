@@ -1,22 +1,28 @@
-# ps1. comprehension about problem
-## ps 1.
-## 5년간 반이 같았던 지인 수가 제일 많은 학생 찾기
-## 넘버링은 1번부터
+'''
+ps1. comprehension about problem
+ps 1. analysis
+5년간 반이 같았던 지인 수가 제일 많은 학생 찾기
+넘버링은 1번부터
 
-## !! input : 예제는 5*5까지 지만 정확히는 n*5이다
-## output :  학생 번호
+!! input : 예제는 5*5까지 지만 정확히는 n*5이다
+output :  학생 번호
 
-## ps 1.2
-## process for pattern : (중복 카운팅을 피하기 위해) 1번 학생과 나머지, 그리고 2번 학생은 1번을 제외한 나머지, 3번은 1,2번을 제외한 나머지와 순차 비교
-## !! exception : 만약 지인수가 동일한 경우, 학생번호는 제일 작은 걸로
+ps 1.2. drawing pattern, exceptions
+process for pattern : (중복 카운팅을 피하기 위해) 1번 학생과 나머지, 그리고 2번 학생은 1번을 제외한 나머지, 3번은 1,2번을 제외한 나머지와 순차 비교
+!! exception : 만약 지인수가 동일한 경우, 학생번호는 제일 작은 걸로
 
-# ps2. utilizations and integrations of algorithmns for comprehension
-## Module 1 : 첫번째 폴문의 현재 인덱스를 활용하는 이중 for문, 되도록 1번부터 시작
+ps2. applying computer algorithmns to comprehension
+ps2.1. utilizing and modularizing
+Module 1 : 첫번째 폴문의 현재 인덱스를 활용하는 이중 for문, 되도록 1번부터 시작
 
-## 알고리즘 에러1 : 나는 단순히 1~5년 간의 기록을 비교해서 같으면 지인수를 +1했는데, 1학년때 같은반이었던 애가 2학년때도 같은반으로 만났을때 지인수가 2중복 투표되는것을 발견 
-## => 단순 비교 for문 수정
+알고리즘 에러1 : 나는 단순히 1~5년 간의 기록을 비교해서 같으면 지인수를 +1했는데, 1학년때 같은반이었던 애가 2학년때도 같은반으로 만났을때 지인수가 2중복 투표되는것을 발견 
+=> 단순 비교 for문 수정
 
-# ps3. Impl
+ps2.2. integration
+abbr
+
+ps3. Impl
+'''
 if __name__=="__main__":
     n=int(input())
   

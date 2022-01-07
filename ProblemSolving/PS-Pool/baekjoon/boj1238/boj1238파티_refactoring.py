@@ -1,14 +1,27 @@
 '''
+reference link : https://www.acmicpc.net/problem/1238
+
 ps1 comprehension about problem
 ps1.1. analysis
+
+모든 학생들은 집에서 x에 갈 수 있다.
+
 ps1.2. drawing pattern, exception
 
+pattern1.
+pattern of dijstra
+
+pattern2.
+pattern of floyd and warshall
+
 ps2. applying computer algorithms to comprehension
-ps2.1. utilizations
+ps2.1. utilizing and modularizing
+
+module 1 : floyd and warshall
+
 ps2.2. integrations
 
 ps3. Impl
-# for문의 k와 인풋 k 가 중첩!
 '''
 from collections import defaultdict
 import heapq

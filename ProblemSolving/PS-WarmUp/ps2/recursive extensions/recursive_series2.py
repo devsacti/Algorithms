@@ -26,7 +26,7 @@ from itertools import permutations
 import string
 
 # control poiint of recursive fork
-def ctrl_recursive(depth, limit, result):
+def promising(depth, limit, result):
     # print(depth,limit,result, end='=>')
 
     # promising or not
@@ -61,7 +61,7 @@ def recursive(depth, limit, result):
 
     # print('cur progress ',result)
 
-    token_ctrl=ctrl_recursive(depth, limit, result)
+    token_ctrl=promising(depth, limit, result)
 
     if(token_ctrl==1):
         # print('when token_ctrl is 1, result',result)

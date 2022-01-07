@@ -27,7 +27,7 @@ from itertools import product
 import string
 
 # control poiint of recursive fork
-def ctrl_recursive(depth, limit, result):
+def promising(depth, limit, result):
     # promising or not
     promising=False
     # all implicit forks are possible, so there is no conditions of promising
@@ -45,7 +45,7 @@ def recursive(depth, limit, result):
 
     # print('cur progress ',result)
 
-    token_ctrl=ctrl_recursive(depth, limit, result)
+    token_ctrl=promising(depth, limit, result)
 
     if(token_ctrl==1):
         # print(result)

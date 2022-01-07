@@ -19,7 +19,7 @@ ps3. Impl
 '''
 
 # control of recursive ; estimate promising or not => 0 or -1, if promising, then check fit or not (-1 or 1), and  keep (0) 
-def ctrl_recursive(depth,limit,result):
+def promising(depth,limit,result):
     print(depth,limit,result,end='=> ')
     global samplespace, results
 
@@ -54,7 +54,7 @@ def recursive_factorial(depth,limit,result):
     
     # backtracking part
     # token means 1,0,-1 which is success, not success(but promising), not success(and unpromising)
-    token_ctrl=ctrl_recursive(depth,limit,result)
+    token_ctrl=promising(depth,limit,result)
     print('# token_ctrl ',token_ctrl)
     
     if(token_ctrl == 1):

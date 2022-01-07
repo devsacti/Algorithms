@@ -56,9 +56,9 @@ dfs-bfs를 활용한 그래프 속 트리 도출 그리고 분석
 
 ## dijstra and floyd warshall
 dijstra(feat. heap)
-=> 최단거리(주석 정리는 아직)
-
-+a 플로이드(주석 정리는 아직)
+=> 파티
+floyd warshall
+=> 파티
 
 ## dynamic programming
 makenum
@@ -72,7 +72,7 @@ sum_rectangular
 
 
 # ps3-oriented practice or record [goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps3)
-* 이론적인 ps2.1. 과정을 실행하는 단계로서, 구현 중의 기본 문법이나 쉘로우 카피, 인덱스, 초기화 설정 등에 대해서 집중하는 단계
+* 이론적인 ps2 과정을 실행하는 단계로서, 구현 중의 기본 문법이나 쉘로우 카피, 인덱스, 초기화 설정 등에 대해서 집중하는 단계
 
 숫자피라미드 !! 주어진 정보에 적합한 자료구조 구현
 
