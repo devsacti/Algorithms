@@ -4,7 +4,7 @@ reference link : https://programmers.co.kr/learn/courses/30/lessons/77486
 ps3. Impl
 vector 형태의 tree로 구현 예정
 => 해도 생각해보니까, 결국은 dfs는 동일하게 1000번을 넘는 반복호출로 런타임이 뜨게 되있었음
-=> 근데 참고자료를 바탕으로 바꿔보니까, 내꺼 재귀랑 다를바없음, 다만 if문이 위쪽이라 한두번 더 호출되는 정도일텐데, 바꾸니까 통과함, 한두번으로 런타임뜬듯함
+=> 근데 참고자료를 바탕으로 바꿔보니까, 내꺼 재귀랑 다를바없음, 다만 if문이 위쪽이라 한두번 더 호출되는 정도일텐데, 바꾸니까 통과함, 한두번 더 호출되서 런타임 에러 뜬 듯함
 link plus refers : https://programmers.co.kr/learn/courses/30/lessons/77486
 
 '''
