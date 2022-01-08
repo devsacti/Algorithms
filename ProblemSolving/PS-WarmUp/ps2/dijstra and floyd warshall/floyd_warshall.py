@@ -33,7 +33,7 @@ ps3.Impl
 from collections import defaultdict
 from heapq import *
 
-def dijstra(graph, s, shortests):
+def floyd_warshall(graph, s, shortests):
   shortests[s]=0
   pq=[]
   heappush(pq,(0,s))

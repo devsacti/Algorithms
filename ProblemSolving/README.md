@@ -1,6 +1,12 @@
 # Coding Problem Solving step cycle : step 1 => 2 => 3 => 1
 코딩 문제 풀이 단계 순환
 
+!! 여러 문제 중에서 최대한 많은 문제를 풀어야하는 코딩테스트에서는,
+
+전체 문제에 대해 반드시 step 1을 우선 실천하여, 맞출확률이 높아 보이는 문제를 우선순위화하고 
+
+풀면서 어려움이 있으면 2문제 정도까지는 병행해가면서 풀기로 생각하였다.
+
 ## ps1 : Comprehension about Problem
 ['정확한 문제 해석' 관련 경험들](https://github.com/devsacti/Algorithms-ProblemSolving/blob/main/ProblemSolving/PS_major_experience/ps1.md)
 

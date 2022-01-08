@@ -30,7 +30,8 @@ ps3. Impl
 '''
 
 # module 2
-def dfs(graph,visited,now):
+def dfs(now):
+    global graph,visited
     global idx_flag, cnt_node,n
     # print(now)
     r_now,c_now=now
@@ -63,7 +64,7 @@ def dfs(graph,visited,now):
         r_adj, c_adj = adj
         if(visited[r_adj][c_adj]==0):
             now=(r_adj,c_adj)
-            dfs(graph,visited,now)
+            dfs(now)
 
     
     
@@ -71,6 +72,9 @@ if __name__=="__main__":
     # module 1
     global n
     n=int(input())
+    # 개인적으로 다른 함수가 쓸수도 있는 변수들은, 그리고 문제 상황에 대한 변수들은 글로벌이 더 적절한듯느껴지기 시작함
+    
+    global graph,visited
     graph=[list(map(int,list(input()))) for _ in range(n)]
     visited=[[0]*n for _ in range(n)]
 
@@ -95,7 +99,7 @@ if __name__=="__main__":
                 idx_flag+=1
                 cnt_node=0
                 now=(r,c)
-                dfs(graph,visited,now)
+                dfs(now)
                 answer.append(cnt_node)
     
     # print(*visited,sep='\n')
