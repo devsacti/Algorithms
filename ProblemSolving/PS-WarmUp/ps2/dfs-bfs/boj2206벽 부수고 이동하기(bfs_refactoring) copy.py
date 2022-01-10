@@ -1,4 +1,6 @@
 '''
+!! 해당 copy 버전은 시작점과 끝점이 다르고, 시작점이 포함되냐 안되냐가 다르다
+
 reference : https://www.acmicpc.net/problem/2206
 
 ps1. comprehension of problem
@@ -8,7 +10,6 @@ from (1,1) to (N,M) 최단거리; 1 base indexing
 1 하나 삭제 가능
 상하좌우로만 이동
 
-!! copy 버전은 시작점과 끝점이 다르고, 시작점이 포함되냐 안되냐가 다르다
 
 ps1.2. drawing pattern, exception
 
