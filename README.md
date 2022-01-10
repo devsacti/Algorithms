@@ -6,5 +6,9 @@ Algorithm : from datastructure to algorithm methods like dfs,bfs
 
 ProblemSolving : problems that is analyzed and simulated by algorithm methods
 
+- PS-WarmUp : My approach for Problem Solving with major experiencee and cases
+
+- PS-Pool : baekjoon, programmers, flowcamp, skm
+
 ## requirements
 vscode
