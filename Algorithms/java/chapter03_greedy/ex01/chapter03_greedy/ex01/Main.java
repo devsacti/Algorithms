@@ -1,4 +1,9 @@
-// 거스름돈 문제
+/*
+chap03
+ex01 : 거스름돈 문제
+*/
+package chapter03_greedy.ex01;
+
 public class Main {
 
     public static void main(String[] args) {

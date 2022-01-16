@@ -1,4 +1,10 @@
+/*
+ex03 : 숫자 카드게임
+*/
+package chapter03_greedy.ex03;
+
 import java.util.*;
+// Math
 
 public class Main {
 

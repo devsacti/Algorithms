@@ -1,4 +1,4 @@
-## ps2 experience : example || Error and Solution
+## ps2 Applying computer algorithms to Comprehension experience : example || Error and Solution
 Error and Solution에서 Solution는 대체로 아래와 같은 중간 체크 습관이 유일한 답이고 그 다음 많은 문제풀이가 답이다.
 
 Sol0) 사후 print는 기본 check용 print format 만들기
@@ -16,7 +16,7 @@ print
 
 Sol1) 해도 안되면, 뜸들이지 말고 다시처음부터 짜라. 시간이 부족해도 최선
 
-### ps2.1 utilizations of computer algorithms
+### ps2.1 utilizing and modularizing computer algorithms
 
 #### example1 2차원 좌표로 표현된 속이 빈 치즈의 단면에서 치즈안팍,즉 In-out을 구분하라
 => 방문좌표에서 dfs찍었을때, 좌표범위를 넘으면 OUT, 아니고 원만히 치즈라는 벽을 넘지 못하고 다 순회하면 IN 
@@ -26,7 +26,7 @@ Error : 2개 이상 시 체크 != 2개가 되면 체크
 
 Solution : 우선 print로 중간체크하는 습관, 그리고 많이 풀기
 
-##### explain
+##### explaination
 
 L10_08, cnt가 2개 이상이면 체크 => 2개가 되면 1번 체크해야되는데 2개가 된 케이스가 3개 4개가 될때마다 과다 체크
 
@@ -70,9 +70,9 @@ Error : (i+1)%10 는 (i%10)+1 와 다른데, 착오!
 
 Solution : 우선 print로 중간체크하는 습관, 그리고 많이 풀기
 
-### ps2.2 Integrations of computer algorithms
+### ps2.2 Integration of modules with Time Complexity
 
-### ps2.3🥇 sincere solution about hidden case
+### ps2.3🥇 humble approach to hidden hidden case
 
 #### example1 추가적인 테스트 케이스 추가
 당최 어떤 케이스에서 불충족인지 감이 안올때는 운에 맞기도 케이스 대입해야

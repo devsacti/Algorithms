@@ -2,20 +2,11 @@
 * 개인적으로 실제 코테에서는 3 1 2 again 3의 순환을 거치므로, 이와같은 순서를 우선하기 희망
 
 # ps1-oriented practice or record [goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps1)
-##
-class president !! 예제에 속지 마라, 예제(부분)는 5행 5열이지만, 실제(전체)는 n행 5열이다.
+## 예제 케이스에 속지 마라
+class president !! 예제(부분)는 5행 5열이지만, 실제(전체) 문제 조건은 n행 5열이다.
 
-## 
-cheeze !! 내가 constant라고 생각한 것이, variable이었다
-(주석 정리는 아직)
-
-##
-streetree !! 수학적 지식으로 패턴 도출하기
-(주석 처리는 아직)
-
-##
-이상한 계산기 !! 내가 도출한 패턴이 지엽적이었다
-(주석 정리는 아직)
+## 수학적 지식으로 패턴 도출하기
+streetree !! (주석 처리는 아직)
 
 # ps2-oriented practice or record [goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps2)
 from computer algorithms to comprehension of problem
@@ -57,6 +48,7 @@ dfs-bfs를 활용한 그래프 속 트리 도출 그리고 분석
 ## dijstra and floyd warshall
 dijstra(feat. heap)
 => 파티
+
 floyd warshall
 => 파티
 
@@ -66,10 +58,6 @@ makenum
 
 sum_rectangular
 (주석 정리는 아직)
-
-연속부분의 최대합 DP
-(주석 정리는 아직)
-
 
 # ps3-oriented practice or record [goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps3)
 * 이론적인 ps2 과정을 실행하는 단계로서, 구현 중의 기본 문법이나 쉘로우 카피, 인덱스, 초기화 설정 등에 대해서 집중하는 단계

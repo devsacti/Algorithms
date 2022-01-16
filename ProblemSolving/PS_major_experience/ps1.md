@@ -1,6 +1,6 @@
-## ps1 experience : example || Error and Solution
+## ps1 Comprehension about Problem experience : example || Error and Solution
 
-### ps1.1 문제 눈으로 선그으면서 읽고, 개별 조건에 대한 명시적 이해
+### ps1.1 Analsis == 문제 눈으로 선그으면서 읽고, 개별 조건에 대한 명시적 이해
 
 #### Error and Solution1 : misreading => drawing a line by eye again and again....
 
@@ -27,7 +27,7 @@ L3 maxofarr 문제에서
 
 반드시 주어진 예제 외에도 추가로 만들어보자,최대한
 
-### ps1.2 패턴 찾기와 예외처리, 그리고 모듈화
+### ps1.2 drawing pattern,exceptions == 패턴 찾기와 예외처리
 
 #### example 1
 가령, 주어진 조건들이 아래와 같고 특정 인덱스의 값을 리턴을 요구 할 때,
