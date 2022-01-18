@@ -14,7 +14,7 @@ public class Main{
         int cnt_row=3;
         int cnt_column=4;
         int[][] matrix = new int[cnt_row][cnt_column];
-
+        sc.close();
         for (int r=0;r<cnt_row;r++){
             for (int c=0;c<cnt_column;c++){
                 matrix[r][c]=sc.nextInt();

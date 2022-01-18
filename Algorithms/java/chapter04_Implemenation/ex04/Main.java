@@ -1,9 +1,27 @@
+/*
+ex04 : 게임 개발
+
+example In-Out
+4 4 
+1 1 0
+1 1 1 1
+1 0 0 1
+1 1 0 1
+1 1 1 1
+
+=>
+
+3
+
+*/
+
 import java.util.*;
 
 public class Main {
 
     public static int n, m, x, y, direction;
     // 방문한 위치를 저장하기 위한 맵을 생성하여 0으로 초기화
+    // 파이썬은 리스트가 기본이라 굳이 최대값으로 초기화할 필요가 없으나, 자바의 경우 n,m의 최대값을 고려하여 초기화 필수
     public static int[][] d = new int[50][50];
     // 전체 맵 정보
     public static int[][] arr = new int [50][50];

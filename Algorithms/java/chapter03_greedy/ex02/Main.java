@@ -1,7 +1,15 @@
 /*
 ex02 : 동빈이의 큰 수의 법칙
+
+example In&Out
+
+5 8 3
+2 4 5 4 6
+=>
+46
+
 */
-package chapter03_greedy.ex02;
+
 
 import java.util.*; 
 // Scanner, Arrays
@@ -14,7 +22,7 @@ public class Main {
         int n = sc.nextInt();
         int m = sc.nextInt();
         int k = sc.nextInt();
-
+        sc.close();
         // N개의 수를 공백을 기준으로 구분하여 입력 받기
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {

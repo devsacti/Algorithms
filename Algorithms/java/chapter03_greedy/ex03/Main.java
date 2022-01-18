@@ -1,7 +1,7 @@
 /*
 ex03 : 숫자 카드게임
 */
-package chapter03_greedy.ex03;
+
 
 import java.util.*;
 // Math
@@ -14,6 +14,7 @@ public class Main {
         // N, M을 공백을 기준으로 구분하여 입력 받기
         int n = sc.nextInt();
         int m = sc.nextInt();
+        sc.close();
         int result = 0;
 
         // 한 줄씩 입력 받아 확인하기

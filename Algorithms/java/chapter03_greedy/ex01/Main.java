@@ -1,8 +1,12 @@
 /*
 chap03
 ex01 : 거스름돈 문제
+
+example In&Out
+=>not applicable
+
 */
-package chapter03_greedy.ex01;
+
 
 public class Main {
 

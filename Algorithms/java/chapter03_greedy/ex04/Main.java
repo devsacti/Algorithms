@@ -1,7 +1,6 @@
 /*
 ex04 : 1이 될때까지
 */
-package chapter03_greedy.ex04;
 
 import java.util.*;
 
@@ -13,6 +12,7 @@ public class Main {
         // N, K를 공백을 기준으로 구분하여 입력 받기
         int n = sc.nextInt();
         int k = sc.nextInt();
+        sc.close();
         int result = 0;
 
         // 아래 while에서는 최대한 나눌 수 있을때까지 다듬거나 나누는 과정이다.

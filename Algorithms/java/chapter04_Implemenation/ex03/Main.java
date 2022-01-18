@@ -1,3 +1,15 @@
+/*
+ex03 : 왕실의 나이트
+
+example In-Out
+a1
+=>
+2
+
+* 체스판에 대해서 미국은 열에 대해서는 abcd...로 인덱싱, 행에 대해서는 1,2,3,4,...로 인덱싱한다.
+이에 따라서 인풋값은 체스판 기준, 열값과 행값이 전달받은 것으로 접근가능하다.
+
+*/
 import java.util.*;
 
 public class Main {
@@ -9,6 +21,12 @@ public class Main {
         String inputData = sc.nextLine();
         int row = inputData.charAt(1) - '0';
         int column = inputData.charAt(0) - 'a' + 1;
+        
+        int experi_row=(int)inputData.charAt(1);
+        
+        // '1'의 본질은 (아스키코드기준) 이진수이고_0110001, 이를 10진수 int화 하면 49
+        System.out.printf("%d %d", row,experi_row);
+        System.out.println();
 
         // 나이트가 이동할 수 있는 8가지 방향 정의
         int[] dx = {-2, -1, 1, 2, 2, 1, -1, -2};
