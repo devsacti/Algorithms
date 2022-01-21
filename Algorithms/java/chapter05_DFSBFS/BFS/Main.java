@@ -1,9 +1,51 @@
+/*
+
+Breadth-First Search example refactoring
+
+example In-Out
+
+8 18
+1 2
+1 3
+1 8
+2 1
+2 7
+3 1
+3 4
+3 5
+4 3
+4 5
+5 3
+5 4
+6 7
+7 2
+7 6
+7 8
+8 1
+8 7
+-
+1 [2, 3, 8]
+2 [1, 7]
+3 [1, 4, 5]
+4 [3, 5]
+5 [3, 4]
+6 [7]
+7 [2, 6, 8]
+8 [1, 7]
+1 2 3 8 7 4 5 6 
+
+*/
+
 import java.util.*;
 
 public class Main {
 
     public static boolean[] visited = new boolean[9];
     public static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
+
+    //
+    public static int visitedRE[]=new int[9];
+    public static ArrayList<ArrayList<Integer>> graphRE = new ArrayList<ArrayList<Integer>>();
 
     // BFS 함수 정의
     public static void bfs(int start) {
@@ -22,6 +64,27 @@ public class Main {
                 if(!visited[y]) {
                     q.offer(y);
                     visited[y] = true;
+                }
+            }
+        }
+    }
+    // bfs Refactoring
+    static void bfsRE(int start){
+        Queue<Integer> q = new LinkedList<>();
+        q.offer(start);
+
+        visitedRE[start]=1;
+
+        while(!q.isEmpty()){
+            int now = q.poll();
+            System.out.print(now + " ");
+
+            for(int i=0;i<graphRE.get(now).size();i++){
+                int adj=graphRE.get(now).get(i);
+
+                if(visitedRE[adj]==0){
+                    visitedRE[adj]=1;
+                    q.offer(adj);
                 }
             }
         }
@@ -68,6 +131,32 @@ public class Main {
         graph.get(8).add(7);
 
         bfs(1);
+
+        System.out.println();
+        System.out.println("refactoring version");
+
+        Scanner sc = new Scanner(System.in);
+
+        int n=sc.nextInt();
+        int cntEdges=sc.nextInt();
+
+        for(int i=0;i<n+1;i++){
+            graphRE.add(new ArrayList<Integer>());
+        }
+
+        for(int i=0;i<cntEdges;i++){
+            int v1=sc.nextInt();
+            int v2=sc.nextInt();
+
+            graphRE.get(v1).add(v2);
+        }
+
+        for(int i=1;i<graphRE.size();i++){
+            System.out.print(i+" ");
+            System.out.print(graphRE.get(i)+"\n");
+        }
+
+        bfsRE(1);
     }
 
 }
