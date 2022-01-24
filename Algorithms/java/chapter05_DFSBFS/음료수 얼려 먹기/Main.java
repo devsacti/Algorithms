@@ -29,6 +29,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         // N, M을 공백을 기준으로 구분하여 입력 받기
+        // 입력값이 2차원이든 3차원 그 이상으로 내눈에 보여도, 
+        // 컴퓨터는 1줄짜리 버퍼론 입력되고,중간에 별다른 처리가없다면, 1줄로 출력된다고 이해할 수 있다.
+        // 이런 점에서 nextInt()는 버퍼에서 \n 전까지 변수를 저장한다. 그리고 \n은 여전히 버퍼에 남아있는데,
+        // 이때 개행에 대해서 처리가 필요하면 nextline 
         n = sc.nextInt();
         m = sc.nextInt();
         sc.nextLine(); // 버퍼 지우기
@@ -37,6 +41,7 @@ public class Main {
         for (int i = 0; i < n; i++) {
             String str = sc.nextLine();
             for (int j = 0; j < m; j++) {
+                // 
                 graph[i][j] = str.charAt(j) - '0';
             }
         }
