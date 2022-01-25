@@ -1,5 +1,19 @@
 import java.util.*;
 
+/*
+exampleIn-Out
+5 6
+101010
+111111
+000001
+111111
+111111
+-
+10
+
+*/
+
+// 파이썬 쓸때는 너무나 고민하지 않아도 됬지만, 2차원 벡터자료형은 별도의 자료형이 요구된다.
 class Node {
 
     private int x;
@@ -31,9 +45,13 @@ public class Main {
     public static int bfs(int x, int y) {
         // 큐(Queue) 구현을 위해 queue 라이브러리 사용 
         Queue<Node> q = new LinkedList<>();
+        // python이라면
+        // q.append((x,y)) or 2차원 벡터값인 start를 고민없이 q.append(start)
         q.offer(new Node(x, y));
         // 큐가 빌 때까지 반복하기 
         while(!q.isEmpty()) {
+            // python이라면,자동할당기능을 토대로, 아래 3줄이
+            // nowR,nowC = q.popleft()
             Node node = q.poll();
             x = node.getX();
             y = node.getY();
