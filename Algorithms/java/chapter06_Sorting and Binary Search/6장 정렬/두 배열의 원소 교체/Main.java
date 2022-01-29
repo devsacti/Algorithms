@@ -1,5 +1,15 @@
 import java.util.*;
 
+/*
+
+
+// 배열 A는 오름차순 정렬 수행
+Arrays.sort(a);
+// 배열 B는 내림차순 정렬 수행
+Arrays.sort(b, Collections.reverseOrder());
+
+*/
+
 public class Main {
 
     public static void main(String[] args) {
