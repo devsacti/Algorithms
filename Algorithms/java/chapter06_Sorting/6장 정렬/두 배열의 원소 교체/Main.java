@@ -2,6 +2,8 @@ import java.util.*;
 
 /*
 
+a.sort();sorted_a=sorted(a)
+b.sort(reverse=True);sorted_b=sort(reverse=True)
 
 // 배열 A는 오름차순 정렬 수행
 Arrays.sort(a);

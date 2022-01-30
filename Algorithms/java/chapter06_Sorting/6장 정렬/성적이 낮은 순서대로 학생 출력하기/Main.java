@@ -1,7 +1,7 @@
 import java.util.*;
 /*
 
-Comparable ; standard java api
+compareTo ; standard java api
 
 */
 class Student implements Comparable<Student> {
