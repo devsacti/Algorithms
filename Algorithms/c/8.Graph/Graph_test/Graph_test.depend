@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1606236804 source:c:\users\schiz\onedrive\바탕 화면\컴퓨터알고리즘및실습\algorithm and practices\8.graph\graph_test\main.c
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	<stdbool.h>
-
