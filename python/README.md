@@ -1,9 +1,8 @@
-# [Time Complexity and Python inner functions](https://daimhada.tistory.com/56)
-let's check it sometimes
+# python and algorithms
+c/cpp 중심의 수업을 파이썬으로 전환해보며 로직을 점검
 
-but i think, we also remind that the major reason we use python is believing veteran developer's breakthrough and utilizing these for better
+## the related
+[Time Complexity and Python inner functions](https://daimhada.tistory.com/56)
 
-# [Important ! sort() of python is Timsort](https://questionet.tistory.com/61)
-Timesort consists of 'insertion sort' and 'merge sort'
-
-and plus, this sorting assume that the given list is almost sorted, so if this is correct, it is better
+[Important ! sort() of python is Timsort](https://questionet.tistory.com/61)
+Timesort consists of 'insertion sort' and 'merge sort' and plus, this sorting assume that the given list is almost sorted, so if this is correct, it is better
