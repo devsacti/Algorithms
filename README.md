@@ -1,14 +1,22 @@
-# Algorithms-ProblemSolving
-it is base conception of developing app, utiliziing cloud, and everything
+# Algorithms
+(To ME) Computational Thinking to simulate world on the computer
 
-## description
-Algorithm : from datastructure to algorithm methods like dfs,bfs
+from datastructure to algorithm methods like dfs,bfs,...
 
-ProblemSolving : My approach for Problem Solving
+it is base conception of Computational Thinking
 
-- PS-WarmUp : My approach for Problem Solving with major experiencee and cases
+which canbe applied to developing app, utiliziing cloud, and everything
 
-- PS-Pool : baekjoon, programmers, flowcamp, skm
+My default language is JAVA
+ because JAVA makes me meet and decide to like OOP.
 
 ## requirements
 vscode
+
+## background
+[Object-orientd-programming]()
+
+(comming soon!)
+
+## extension
+[ProblemSolving](https://github.com/devsacti/ProblemSolving) : My approach for Problem Solving
