@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main {
 
-    // 순차 탐색 소스코드 구현
+    // 순차 탐색 소스코드 구현 ; 시간복잡도는 O(n)
     public static int sequantialSearch(int n, String target, String[] arr) {
         // 각 원소를 하나씩 확인하며
         for (int i = 0; i < n; i++) {
