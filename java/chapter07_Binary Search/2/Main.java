@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main {
 
-    // 이진 탐색 소스코드 구현(재귀 함수)
+    // 이진 탐색 소스코드 구현(재귀 함수) ; 재귀반복 횟수에 따라서 한계 생길수도?
     public static int binarySearch(int[] arr, int target, int start, int end) {
         if (start > end) return -1;
         int mid = (start + end) / 2;
@@ -12,6 +12,18 @@ public class Main {
         else if (arr[mid] > target) return binarySearch(arr, target, start, mid - 1);
         // 중간점의 값보다 찾고자 하는 값이 큰 경우 오른쪽 확인
         else return binarySearch(arr, target, mid + 1, end);
+    }
+
+    public static int bs(int[] arr, int target, int s, int e) {
+        if (s > e) return -1;
+        int mid = (s + e) / 2;
+
+        // 찾은 경우 중간점 인덱스 반환
+        if (arr[mid] == target) return mid;
+        // 중간점의 값보다 찾고자 하는 값이 작은 경우 왼쪽 확인
+        else if (arr[mid] > target) return binarySearch(arr, target, s, mid - 1);
+        // 중간점의 값보다 찾고자 하는 값이 큰 경우 오른쪽 확인
+        else return bs(arr, target, mid + 1, e);
     }
 
     public static void main(String[] args) {
