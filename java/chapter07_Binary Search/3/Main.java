@@ -15,7 +15,19 @@ public class Main {
         }
         return -1;
     }
-
+    // 이진 탐색 소스코드 구현(반복문)
+    public static int bs(int[] arr, int target, int s, int e) {
+        while (s <= e) {
+            int mid = (s + e) / 2;
+            // 찾은 경우 중간점 인덱스 반환
+            if (arr[mid] == target) return mid;
+            // 중간점의 값보다 찾고자 하는 값이 작은 경우 왼쪽 확인
+            else if (arr[mid] > target) end = mid - 1;
+            // 중간점의 값보다 찾고자 하는 값이 큰 경우 오른쪽 확인
+            else s = mid + 1; 
+        }
+        return -1;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
