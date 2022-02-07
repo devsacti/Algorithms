@@ -1,6 +1,12 @@
-import java.util.*;
-
 /*
+
+example InOut
+
+5 3
+1 2 5 4 3
+5 5 6 6 5
+--
+26
 
 a.sort();sorted_a=sorted(a)
 b.sort(reverse=True);sorted_b=sort(reverse=True)
@@ -11,6 +17,7 @@ Arrays.sort(a);
 Arrays.sort(b, Collections.reverseOrder());
 
 */
+import java.util.*;
 
 public class Main {
 

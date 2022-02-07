@@ -1,9 +1,18 @@
-import java.util.*;
 /*
+
+example InOut
+
+2
+홍길동 95
+이순신 77
+--
+이순신 홍길동
 
 compareTo ; standard java api
 
 */
+import java.util.*;
+
 class Student implements Comparable<Student> {
 
     private String name;

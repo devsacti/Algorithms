@@ -1,5 +1,3 @@
-import java.util.*;
-
 /*
 example InOut
 
@@ -11,6 +9,7 @@ example InOut
 27 15 12
 
 */
+import java.util.*;
 
 public class Main {
 
