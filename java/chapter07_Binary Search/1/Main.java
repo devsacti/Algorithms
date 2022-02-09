@@ -1,3 +1,11 @@
+/*
+example InOut
+
+5 adam
+b adam c d e
+--
+1
+*/
 import java.util.*;
 
 public class Main {
