@@ -1,10 +1,9 @@
-VScode는 visual studio 같은 종합 ide보단
-
-가볍게 그리고 취사선택가능한 개발환경으로
+# vscode
+visual studio 같은 종합 ide보단  가볍게 그리고 취사선택가능한 개발환경으로
 
 유연한 만큼, 개발환경 extension, 컴파일러 등의 추가 설치가 요구된다.
 
-example1.vscode 상 c/c++ extension외에도 c/c++ 컴파일러 설치
+## example1.vscode 상 c/c++ extension외에도 c/c++ 컴파일러 설치
 
 MinGW는 c/c++ 컴파일러이다.
 추가로 launch.json,tasks.json을 편집하고, 실행 버튼을 별도로 설정했다.
@@ -12,7 +11,7 @@ https://www.youtube.com/watch?v=3-PD_AUSOLM
 -사용자 단축키
 ctrl alt c, r
 
-example2.vscode 상 python extension외에도 python interpreter select
+## example2.vscode 상 python extension외에도 python interpreter select
 
 python ide 설치하면 자동으로 인터프레터 딸려오고, anaconda 가상환경별로도 제공
 
