@@ -7,17 +7,17 @@ are base conception of Computational Thinking,
 
 which canbe applied to developing app service, utiliziing cloud, and everything
 
-## Languages
+# Languages
 all languages are equal, they have their own role.
 
-#### [Java](./java)
+## [Java](./java)
 
 [background : Object-orientd-programming](https://bitbucket.org/devsactiorigin/object-oriented-programming/src/main/)
 
-#### [Python](./python)
+## [Python](./python)
 
-## requirements
+# requirements
 [vscode](./vscode.md)
 
-## extension
+# extension
 [ProblemSolving](https://github.com/devsacti/ProblemSolving) : My approach for Problem Solving
