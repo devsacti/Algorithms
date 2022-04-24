@@ -12,12 +12,17 @@ all languages are equal, they have their own role.
 
 ## [Java](./java)
 
-[background : Object-orientd-programming](https://bitbucket.org/devsactiorigin/object-oriented-programming/src/main/)
-
 ## [Python](./python)
+
+## [Kotlin]
 
 # requirements
 [vscode](./vscode.md)
+
+# Background
+[Java : Object-orientd-programming](https://bitbucket.org/devsactiorigin/object-oriented-programming/src/main/)
+
+
 
 # extension
 [ProblemSolving](https://github.com/devsacti/ProblemSolving) : My approach for Problem Solving

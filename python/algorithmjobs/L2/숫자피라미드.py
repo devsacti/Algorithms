@@ -38,7 +38,7 @@ if __name__=="__main__":
     # print(sample)
     
     # Module 1.1
-    # count of item of row of pyramid
+    # count of item per row of pyramid
     # pattern 2*n+1
     cnt_item_row=[2*n+1 for n in range(n)]
     
