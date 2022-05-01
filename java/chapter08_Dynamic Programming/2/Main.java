@@ -2,10 +2,13 @@ import java.util.*;
 
 public class Main {
 
+    // 한 번 계산된 결과를 메모이제이션(Memoization)하기 위한 배열 초기화
+    // 나는 dptable 이라 명명하고 ArrayList<Long>으로 할듯
     public static long[] d = new long[100];
 
+    // 피보나치 함수(Fibonacci Function)를 재귀함수로 구현 (탑다운 다이나믹 프로그래밍)
     public static long fibo(int x) {
-        System.out.print("f(" + x + ") ");
+        // 종료 조건(1 혹은 2일 때 1을 반환)
         if (x == 1 || x == 2) {
             return 1;
         }
@@ -19,6 +22,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        fibo(6);
+        System.out.println(fibo(50));
     }
 }

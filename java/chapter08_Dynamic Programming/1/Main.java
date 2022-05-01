@@ -5,6 +5,8 @@ public class Main {
     // 피보나치 함수(Fibonacci Function)을 재귀함수로 구현
     public static int fibo(int x) {
         if (x == 1 || x == 2) {
+
+            // 피보나치에서 x_1, x_2 모두 1이다
             return 1;
         }
         return fibo(x - 1) + fibo(x - 2);
